@@ -2,8 +2,8 @@ name: Refresh word list
 
 on:
   schedule:
-    # Saturday is day 6. This is 12:00 UTC, so 8am Eastern in summer, 7am in winter.
-    - cron: '0 12 * * 6'
+    # Wednesday is day 3, Saturday is day 6. 12:00 UTC = 8am Eastern in summer.
+    - cron: '0 12 * * 3,6'
   workflow_dispatch:
 
 permissions:
@@ -23,7 +23,7 @@ jobs:
         env:
           SHEET_ID: ${{ secrets.SHEET_ID }}
           SHEET_GID: ${{ secrets.SHEET_GID }}
-        run: python build_words.py
+        run: python scripts/build_words.py
 
       - name: Commit if the list changed
         run: |
