@@ -1,0 +1,125 @@
+{
+ "count": 20,
+ "words": [
+  {
+   "id": "dc2f70ed8b",
+   "uk": "оточення",
+   "en": "surroundings",
+   "pos": "noun"
+  },
+  {
+   "id": "d337cc2f67",
+   "uk": "свідок",
+   "en": "witness",
+   "pos": "noun"
+  },
+  {
+   "id": "808294660c",
+   "uk": "розслідування",
+   "en": "investigation",
+   "pos": "noun"
+  },
+  {
+   "id": "ade13cb5f3",
+   "uk": "заклад",
+   "en": "institution",
+   "pos": "noun"
+  },
+  {
+   "id": "69d80e9533",
+   "uk": "осередок",
+   "en": "hub",
+   "pos": "noun"
+  },
+  {
+   "id": "08552f63cc",
+   "uk": "впроваджувати",
+   "en": "to implement",
+   "pos": "verb"
+  },
+  {
+   "id": "709f17c0ca",
+   "uk": "спростовувати",
+   "en": "to refute",
+   "pos": "verb"
+  },
+  {
+   "id": "5c72e5a3c1",
+   "uk": "висвітлювати",
+   "en": "to cover, to report on",
+   "pos": "verb"
+  },
+  {
+   "id": "e9e20cfad6",
+   "uk": "пересвідчитися",
+   "en": "to make sure",
+   "pos": "verb"
+  },
+  {
+   "id": "7f09e00c1c",
+   "uk": "наполягати",
+   "en": "to insist",
+   "pos": "verb"
+  },
+  {
+   "id": "70da10fef5",
+   "uk": "прискіпливий",
+   "en": "meticulous",
+   "pos": "adjective"
+  },
+  {
+   "id": "79de362723",
+   "uk": "засадничий",
+   "en": "fundamental",
+   "pos": "adjective"
+  },
+  {
+   "id": "7579042dbc",
+   "uk": "стриманий",
+   "en": "restrained",
+   "pos": "adjective"
+  },
+  {
+   "id": "9e04bf5e7a",
+   "uk": "вагомий",
+   "en": "weighty",
+   "pos": "adjective"
+  },
+  {
+   "id": "6a5e2547b5",
+   "uk": "нагальний",
+   "en": "urgent",
+   "pos": "adjective"
+  },
+  {
+   "id": "532c3f5ec7",
+   "uk": "втім",
+   "en": "however",
+   "pos": "adverb"
+  },
+  {
+   "id": "9e25fa6637",
+   "uk": "щойно",
+   "en": "just now",
+   "pos": "adverb"
+  },
+  {
+   "id": "08a0dbc1db",
+   "uk": "навмисне",
+   "en": "deliberately",
+   "pos": "adverb"
+  },
+  {
+   "id": "72c8a412d6",
+   "uk": "подекуди",
+   "en": "here and there",
+   "pos": "adverb"
+  },
+  {
+   "id": "6cb7f41738",
+   "uk": "дедалі",
+   "en": "increasingly",
+   "pos": "adverb"
+  }
+ ]
+}

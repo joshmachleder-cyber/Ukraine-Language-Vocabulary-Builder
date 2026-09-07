@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Слова</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#1B2A6B">
+<style>
+  :root {
+    --ink:        #16214F;
+    --ink-soft:   #5A6486;
+    --paper:      #EFEDE7;
+    --paper-lift: #F8F7F3;
+    --wheat:      #D9A93C;
+    --right:      #2C6E52;
+    --wrong:      #9B3B32;
+    --rule:       rgba(22, 33, 79, 0.16);
+    --serif: ui-serif, Georgia, "Times New Roman", serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body { height: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: center;
+  }
+
+  #app {
+    width: 100%;
+    max-width: 30rem;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: env(safe-area-inset-top) 1.25rem calc(1.25rem + env(safe-area-inset-bottom));
+  }
+
+  /* Progress ticks: one per question in the session */
+  .ticks {
+    display: flex;
+    gap: 3px;
+    height: 3px;
+    margin: 1rem 0 0;
+    flex: 0 0 auto;
+  }
+  .tick { flex: 1; background: var(--rule); border-radius: 2px; }
+  .tick.done { background: var(--ink); }
+  .tick.miss { background: var(--wrong); }
+  .tick.now  { background: var(--wheat); }
+
+  .meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: var(--ink-soft);
+    margin-top: 0.6rem;
+    font-variant-numeric: tabular-nums;
+    flex: 0 0 auto;
+  }
+
+  /* The word is the hero. Everything else stays quiet. */
+  .stage {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+    min-height: 8rem;
+  }
+
+  .word {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(2.4rem, 13vw, 3.9rem);
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .pos {
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    margin-top: 0.9rem;
+    font-style: italic;
+  }
+
+  .verdict {
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    margin-top: 1.1rem;
+    min-height: 1.6rem;
+  }
+  .verdict.right { color: var(--right); }
+  .verdict.wrong { color: var(--wrong); }
+
+  /* Answers sit low, in thumb reach. */
+  .choices { display: grid; gap: 0.5rem; flex: 0 0 auto; }
+
+  .choice {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    text-align: left;
+    font: inherit;
+    font-size: 1.05rem;
+    padding: 0.95rem 1rem;
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    background: var(--paper-lift);
+    color: var(--ink);
+    cursor: pointer;
+  }
+  .choice:focus-visible { outline: 2px solid var(--wheat); outline-offset: 2px; }
+  .choice[disabled] { cursor: default; }
+
+  .key {
+    font-size: 0.7rem;
+    color: var(--ink-soft);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    min-width: 1.35rem;
+    text-align: center;
+    padding: 1px 0;
+    flex: 0 0 auto;
+  }
+
+  .choice.is-right {
+    border-color: var(--right);
+    box-shadow: inset 3px 0 0 var(--right);
+    background: #EAF0EC;
+  }
+  .choice.is-wrong {
+    border-color: var(--wrong);
+    box-shadow: inset 3px 0 0 var(--wrong);
+    background: #F3E9E7;
+  }
+  .choice.is-muted { opacity: 0.45; }
+
+  .next {
+    margin-top: 0.75rem;
+    width: 100%;
+    font: inherit;
+    font-size: 1rem;
+    padding: 0.9rem;
+    border: 0;
+    border-radius: 10px;
+    background: var(--ink);
+    color: var(--paper);
+    cursor: pointer;
+  }
+  .next:focus-visible { outline: 2px solid var(--wheat); outline-offset: 2px; }
+  .next[hidden] { display: none; }
+
+  /* End of session */
+  .summary { flex: 1 1 auto; display: flex; flex-direction: column; justify-content: center; }
+  .score {
+    font-family: var(--serif);
+    font-size: 3.4rem;
+    line-height: 1;
+    margin: 0 0 0.4rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .score small { font-size: 1.4rem; color: var(--ink-soft); }
+  .summary p { color: var(--ink-soft); font-size: 0.9rem; margin: 0 0 1.5rem; }
+  .missed { list-style: none; padding: 0; margin: 0 0 1.5rem; }
+  .missed li {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.6rem 0;
+    border-top: 1px solid var(--rule);
+  }
+  .missed .uk { font-family: var(--serif); font-size: 1.15rem; }
+  .missed .en { color: var(--ink-soft); text-align: right; }
+
+  .quiet {
+    background: none;
+    border: 0;
+    color: var(--ink-soft);
+    font: inherit;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0.75rem 0 0;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .choice, .tick { transition: background-color 120ms ease, opacity 120ms ease; }
+  }
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+(function () {
+  "use strict";
+
+  var SESSION_SIZE = 20;
+  var CHOICES = 4;
+  var STORE_KEY = "uk-vocab-progress-v1";
+
+  // Days until a word comes back, by how many times you have got it right in a row.
+  // Swap this out for ts-fsrs later if you want a real scheduler.
+  var LADDER = [1, 3, 7, 16, 35, 75, 150];
+
+  var app = document.getElementById("app");
+  var words = [];
+  var progress = loadProgress();
+  var session = [];
+  var index = 0;
+  var results = [];
+  var answered = false;
+
+  // ---------- storage ----------
+
+  function loadProgress() {
+    try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; }
+    catch (e) { return {}; }
+  }
+
+  function saveProgress() {
+    try { localStorage.setItem(STORE_KEY, JSON.stringify(progress)); }
+    catch (e) { /* private browsing, nothing to do */ }
+  }
+
+  function record(word, correct) {
+    var p = progress[word.id] || { streak: 0, reps: 0, lapses: 0, due: 0 };
+    p.reps += 1;
+    p.seen = Date.now();
+    if (correct) {
+      p.streak += 1;
+      var days = LADDER[Math.min(p.streak - 1, LADDER.length - 1)];
+      p.due = Date.now() + days * 86400000;
+    } else {
+      p.streak = 0;
+      p.lapses += 1;
+      p.due = Date.now() + 600000; // back in ten minutes
+    }
+    progress[word.id] = p;
+    saveProgress();
+  }
+
+  // ---------- session building ----------
+
+  function backlog() {
+    var now = Date.now();
+    return words.filter(function (w) {
+      var p = progress[w.id];
+      return p && p.due <= now;
+    }).length;
+  }
+
+  function buildSession() {
+    var now = Date.now();
+    var due = [], fresh = [], resting = [];
+
+    words.forEach(function (w) {
+      var p = progress[w.id];
+      if (!p) fresh.push(w);
+      else if (p.due <= now) due.push(w);
+      else resting.push(w);
+    });
+
+    due.sort(function (a, b) { return progress[a.id].due - progress[b.id].due; });
+    resting.sort(function (a, b) { return (progress[a.id].seen || 0) - (progress[b.id].seen || 0); });
+
+    // Due reviews first, then new words, then oldest-seen to top up a short list.
+    return due.concat(fresh, resting).slice(0, SESSION_SIZE);
+  }
+
+  function shuffle(arr) {
+    for (var i = arr.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = arr[i]; arr[i] = arr[j]; arr[j] = t;
+    }
+    return arr;
+  }
+
+  // Distractors have to be competitive or the question answers itself.
+  // Same part of speech first, and never two options with the same English.
+  function distractorsFor(word) {
+    var taken = { };
+    taken[word.en.toLowerCase()] = true;
+
+    var samePos = [], anyPos = [];
+    words.forEach(function (w) {
+      if (w.id === word.id) return;
+      var key = w.en.toLowerCase();
+      if (taken[key]) return;
+      if (word.pos && w.pos === word.pos) samePos.push(w);
+      else anyPos.push(w);
+    });
+
+    var picked = [];
+    var pools = [shuffle(samePos), shuffle(anyPos)];
+    for (var p = 0; p < pools.length && picked.length < CHOICES - 1; p++) {
+      for (var i = 0; i < pools[p].length && picked.length < CHOICES - 1; i++) {
+        var cand = pools[p][i];
+        var key = cand.en.toLowerCase();
+        if (taken[key]) continue;
+        taken[key] = true;
+        picked.push(cand);
+      }
+    }
+    return picked;
+  }
+
+  // ---------- rendering ----------
+
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+
+  function renderQuestion() {
+    answered = false;
+    var word = session[index];
+    var options = shuffle(distractorsFor(word).concat([word]));
+
+    app.innerHTML = "";
+
+    var ticks = el("div", "ticks");
+    for (var i = 0; i < session.length; i++) {
+      var t = el("div", "tick");
+      if (i < results.length) t.classList.add(results[i].correct ? "done" : "miss");
+      else if (i === index) t.classList.add("now");
+      ticks.appendChild(t);
+    }
+    app.appendChild(ticks);
+
+    var meta = el("div", "meta");
+    meta.appendChild(el("span", null, (index + 1) + " of " + session.length));
+    var p = progress[word.id];
+    meta.appendChild(el("span", null, p ? "seen " + p.reps + "x" : "new word"));
+    app.appendChild(meta);
+
+    var stage = el("div", "stage");
+    stage.appendChild(el("h1", "word", word.uk));
+    if (word.pos) stage.appendChild(el("div", "pos", word.pos));
+    var verdict = el("div", "verdict");
+    verdict.setAttribute("aria-live", "polite");
+    stage.appendChild(verdict);
+    app.appendChild(stage);
+
+    var choices = el("div", "choices");
+    var buttons = [];
+    options.forEach(function (opt, i) {
+      var b = el("button", "choice");
+      b.appendChild(el("span", "key", String(i + 1)));
+      b.appendChild(el("span", null, opt.en));
+      b.addEventListener("click", function () { answer(opt, word, buttons, options, verdict, next, ticks); });
+      choices.appendChild(b);
+      buttons.push(b);
+    });
+    app.appendChild(choices);
+
+    var next = el("button", "next", index + 1 < session.length ? "Next word" : "Finish");
+    next.hidden = true;
+    next.addEventListener("click", advance);
+    app.appendChild(next);
+
+    document.onkeydown = function (e) {
+      if (!answered && e.key >= "1" && e.key <= String(options.length)) {
+        buttons[Number(e.key) - 1].click();
+      } else if (answered && (e.key === "Enter" || e.key === " ")) {
+        e.preventDefault();
+        advance();
+      }
+    };
+  }
+
+  function answer(picked, word, buttons, options, verdict, next, ticks) {
+    if (answered) return;
+    answered = true;
+    var correct = picked.id === word.id;
+
+    buttons.forEach(function (b, i) {
+      b.disabled = true;
+      if (options[i].id === word.id) b.classList.add("is-right");
+      else if (options[i].id === picked.id) b.classList.add("is-wrong");
+      else b.classList.add("is-muted");
+    });
+
+    verdict.className = "verdict " + (correct ? "right" : "wrong");
+    verdict.textContent = correct
+      ? (word.note ? word.note : "Correct")
+      : word.uk + " means " + word.en + (word.note ? ". " + word.note : "");
+
+    ticks.children[index].className = "tick " + (correct ? "done" : "miss");
+
+    record(word, correct);
+    results.push({ word: word, correct: correct });
+    next.hidden = false;
+    next.focus();
+  }
+
+  function advance() {
+    index += 1;
+    if (index < session.length) renderQuestion();
+    else renderSummary();
+  }
+
+  function renderSummary() {
+    document.onkeydown = null;
+    app.innerHTML = "";
+
+    var right = results.filter(function (r) { return r.correct; }).length;
+    var missed = results.filter(function (r) { return !r.correct; });
+
+    var wrap = el("div", "summary");
+    var score = el("p", "score");
+    score.appendChild(document.createTextNode(String(right)));
+    var small = el("small", null, " / " + results.length);
+    score.appendChild(small);
+    wrap.appendChild(score);
+
+    var left = backlog();
+    wrap.appendChild(el("p", null, left
+      ? left + " " + (left === 1 ? "word is" : "words are") + " still due. Another round will take them down."
+      : "Nothing else is due today."));
+
+    if (missed.length) {
+      var list = el("ul", "missed");
+      missed.forEach(function (r) {
+        var li = el("li");
+        li.appendChild(el("span", "uk", r.word.uk));
+        li.appendChild(el("span", "en", r.word.en));
+        list.appendChild(li);
+      });
+      wrap.appendChild(list);
+    }
+
+    var again = el("button", "next", "Study 20 more");
+    again.addEventListener("click", start);
+    wrap.appendChild(again);
+
+    var reset = el("button", "quiet", "Reset all progress");
+    reset.addEventListener("click", function () {
+      if (confirm("Clear every word's review history on this device?")) {
+        progress = {};
+        saveProgress();
+        start();
+      }
+    });
+    wrap.appendChild(reset);
+
+    app.appendChild(wrap);
+  }
+
+  function renderEmpty(message) {
+    app.innerHTML = "";
+    var wrap = el("div", "summary");
+    wrap.appendChild(el("h1", "word", "No words"));
+    wrap.appendChild(el("p", null, message));
+    app.appendChild(wrap);
+  }
+
+  function start() {
+    session = buildSession();
+    index = 0;
+    results = [];
+    if (!session.length) {
+      renderEmpty("The word list came back empty. Check that the Saturday refresh ran and that words.json has rows in it.");
+      return;
+    }
+    renderQuestion();
+  }
+
+  // ---------- boot ----------
+
+  fetch("words.json", { cache: "no-cache" })
+    .then(function (r) {
+      if (!r.ok) throw new Error("words.json returned " + r.status);
+      return r.json();
+    })
+    .then(function (data) {
+      words = (data.words || []).filter(function (w) { return w.uk && w.en; });
+      if (words.length < CHOICES) {
+        renderEmpty("You need at least " + CHOICES + " words in the sheet before multiple choice works.");
+        return;
+      }
+      start();
+    })
+    .catch(function (err) {
+      renderEmpty("Could not load the word list. " + err.message);
+    });
+
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js").catch(function () { /* offline is optional */ });
+  }
+})();
+</script>
+</body>
+</html>

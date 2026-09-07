@@ -1,0 +1,11 @@
+{
+  "name": "Ukrainian words",
+  "short_name": "Слова",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#EFEDE7",
+  "theme_color": "#1B2A6B",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

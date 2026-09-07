@@ -1,0 +1,38 @@
+name: Refresh word list
+
+on:
+  schedule:
+    # Saturday is day 6. This is 12:00 UTC, so 8am Eastern in summer, 7am in winter.
+    - cron: '0 12 * * 6'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Pull the sheet
+        env:
+          SHEET_ID: ${{ secrets.SHEET_ID }}
+          SHEET_GID: ${{ secrets.SHEET_GID }}
+        run: python scripts/build_words.py
+
+      - name: Commit if the list changed
+        run: |
+          if git diff --quiet -- words.json; then
+            echo "No change this week."
+            exit 0
+          fi
+          git config user.name "words-bot"
+          git config user.email "words-bot@users.noreply.github.com"
+          git add words.json
+          git commit -m "Refresh word list ($(date -u +%Y-%m-%d))"
+          git push
