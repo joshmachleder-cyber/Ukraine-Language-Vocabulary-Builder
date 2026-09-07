@@ -1,6 +1,6 @@
 // Cache the shell so the drill works on a plane or a bad connection.
 // words.json goes to the network first, so a Saturday refresh shows up right away.
-var SHELL = "uk-vocab-shell-v1";
+var SHELL = "uk-vocab-shell-v2";
 var FILES = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg"];
 
 self.addEventListener("install", function (e) {
