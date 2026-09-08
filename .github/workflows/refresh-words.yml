@@ -23,7 +23,7 @@ jobs:
         env:
           SHEET_ID: ${{ secrets.SHEET_ID }}
           SHEET_GID: ${{ secrets.SHEET_GID }}
-        run: python scripts/build_words.py
+        run: python build_words.py
 
       - name: Commit if the list changed
         run: |
