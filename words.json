@@ -1,11 +1,6 @@
 {
- "count": 221,
+ "count": 292,
  "words": [
-  {
-   "id": "2c4f758032",
-   "uk": "15 хвилин",
-   "en": "15 minutes"
-  },
   {
    "id": "d42d7ebffb",
    "uk": "амброзіі",
@@ -27,9 +22,9 @@
    "en": "free"
   },
   {
-   "id": "cb5ddf8dce",
-   "uk": "біль ум'язах",
-   "en": "pain in the brain"
+   "id": "a662894501",
+   "uk": "божевільні",
+   "en": "crazy"
   },
   {
    "id": "fec0be1855",
@@ -42,6 +37,11 @@
    "en": "dirty"
   },
   {
+   "id": "607635445c",
+   "uk": "брудні",
+   "en": "dirty"
+  },
+  {
    "id": "508cef4cfa",
    "uk": "будній день",
    "en": "weekday"
@@ -50,6 +50,26 @@
    "id": "1a562979f7",
    "uk": "будувати",
    "en": "build"
+  },
+  {
+   "id": "9a5be9ad21",
+   "uk": "бути успішним",
+   "en": "to be successful"
+  },
+  {
+   "id": "cb5ddf8dce",
+   "uk": "біль ум'язах",
+   "en": "pain in the brain"
+  },
+  {
+   "id": "040ec20333",
+   "uk": "варто",
+   "en": "worth"
+  },
+  {
+   "id": "fdbea1ec51",
+   "uk": "ваша думка",
+   "en": "your opinion"
   },
   {
    "id": "7b2866b6e6",
@@ -67,6 +87,11 @@
    "en": "use"
   },
   {
+   "id": "9c8e5d7dd8",
+   "uk": "випадково",
+   "en": "accidentally"
+  },
+  {
    "id": "66cdf8c5d4",
    "uk": "вирішувати",
    "en": "solve"
@@ -77,9 +102,9 @@
    "en": "enough"
   },
   {
-   "id": "17a1e5635e",
-   "uk": "вихідний день",
-   "en": "day off"
+   "id": "14fa2001e1",
+   "uk": "витрачаємо",
+   "en": "we spend"
   },
   {
    "id": "401af32ab2",
@@ -87,39 +112,9 @@
    "en": "Marry me!"
   },
   {
-   "id": "190e0e772a",
-   "uk": "відбувається",
-   "en": "is happening"
-  },
-  {
-   "id": "43fd1ce4c2",
-   "uk": "відволікати",
-   "en": "distract"
-  },
-  {
-   "id": "cca588af31",
-   "uk": "відгук",
-   "en": "review"
-  },
-  {
-   "id": "017a4e1330",
-   "uk": "віддалено",
-   "en": "remotely"
-  },
-  {
-   "id": "4cbaf07e19",
-   "uk": "відпустка",
-   "en": "leave"
-  },
-  {
-   "id": "d28e11057d",
-   "uk": "вік",
-   "en": "age"
-  },
-  {
-   "id": "a4a21de2dd",
-   "uk": "вік age",
-   "en": "age"
+   "id": "17a1e5635e",
+   "uk": "вихідний день",
+   "en": "day off"
   },
   {
    "id": "9754d5c2e8",
@@ -127,14 +122,9 @@
    "en": "to get a job"
   },
   {
-   "id": "c642468209",
-   "uk": "влаштуватися на роботу late to work",
-   "en": "to get a job late to work"
-  },
-  {
-   "id": "8cd200489e",
-   "uk": "водійське посвідчення",
-   "en": "driver's license"
+   "id": "85379d5e3d",
+   "uk": "внески",
+   "en": "contributions"
   },
   {
    "id": "a48234778b",
@@ -142,19 +132,34 @@
    "en": "algae"
   },
   {
+   "id": "8cd200489e",
+   "uk": "водійське посвідчення",
+   "en": "driver's license"
+  },
+  {
    "id": "d7dd3a14c1",
    "uk": "Востаннє",
    "en": "Last time"
   },
   {
-   "id": "c1b1c4d1e8",
-   "uk": "Востаннє --- last",
-   "en": "Last --- last"
-  },
-  {
    "id": "88fb8a631d",
    "uk": "впевненність",
    "en": "confidence"
+  },
+  {
+   "id": "b01f725005",
+   "uk": "впевненість",
+   "en": "confidence"
+  },
+  {
+   "id": "7d1b5fef26",
+   "uk": "впертий як осел",
+   "en": "stubborn as a donkey"
+  },
+  {
+   "id": "69a1378978",
+   "uk": "впливати",
+   "en": "influence"
   },
   {
    "id": "51354b67b5",
@@ -182,9 +187,59 @@
    "en": "narrow"
   },
   {
+   "id": "3ddb4c2526",
+   "uk": "вулканічні  острови",
+   "en": "volcanic islands"
+  },
+  {
+   "id": "190e0e772a",
+   "uk": "відбувається",
+   "en": "is happening"
+  },
+  {
+   "id": "43fd1ce4c2",
+   "uk": "відволікати",
+   "en": "distract"
+  },
+  {
+   "id": "cca588af31",
+   "uk": "відгук",
+   "en": "review"
+  },
+  {
+   "id": "017a4e1330",
+   "uk": "віддалено",
+   "en": "remotely"
+  },
+  {
+   "id": "0b015cfb0b",
+   "uk": "відповідальний",
+   "en": "responsible"
+  },
+  {
+   "id": "4cbaf07e19",
+   "uk": "відпустка",
+   "en": "leave"
+  },
+  {
+   "id": "d28e11057d",
+   "uk": "вік",
+   "en": "age"
+  },
+  {
    "id": "f7a53154f3",
    "uk": "гаразд",
    "en": "OK"
+  },
+  {
+   "id": "ec974ad41c",
+   "uk": "гарбуз",
+   "en": "pumpkin"
+  },
+  {
+   "id": "aed0554bcb",
+   "uk": "гарний кінцевий результат",
+   "en": "good end result"
   },
   {
    "id": "42acf69dac",
@@ -207,24 +262,29 @@
    "en": "hostel"
   },
   {
+   "id": "f766c8565d",
+   "uk": "Гучно",
+   "en": "Loud"
+  },
+  {
    "id": "a03386cdaf",
    "uk": "дах",
    "en": "roof"
   },
   {
-   "id": "0646664d45",
-   "uk": "дізнаємося",
-   "en": "we will find out"
-  },
-  {
-   "id": "d5a2efeaf2",
-   "uk": "до рецгее",
-   "en": "to the retsgee"
+   "id": "5da4393770",
+   "uk": "дводенний",
+   "en": "two-day"
   },
   {
    "id": "246c12c5be",
    "uk": "до речі",
    "en": "by the way"
+  },
+  {
+   "id": "78fd41e8be",
+   "uk": "доба",
+   "en": "era"
   },
   {
    "id": "8544d823b2",
@@ -242,9 +302,19 @@
    "en": "allowed"
   },
   {
+   "id": "4993b04538",
+   "uk": "дозволяв нам",
+   "en": "allowed us"
+  },
+  {
    "id": "8a38e0697e",
    "uk": "дозволяти",
    "en": "allow"
+  },
+  {
+   "id": "e16d8b4db6",
+   "uk": "долоня",
+   "en": "palm"
   },
   {
    "id": "3c8896bcf2",
@@ -262,19 +332,9 @@
    "en": "experience"
   },
   {
-   "id": "1c57697df0",
-   "uk": "досвід experience",
-   "en": "experience"
-  },
-  {
    "id": "5d52c45f75",
    "uk": "досвідчений",
    "en": "experienced"
-  },
-  {
-   "id": "c73bca905a",
-   "uk": "досвідчений experienced",
-   "en": "experienced experienced"
   },
   {
    "id": "e50dc5a48b",
@@ -287,14 +347,19 @@
    "en": "to adhere to"
   },
   {
-   "id": "31105ae77c",
-   "uk": "дотримуватися observe",
-   "en": "to observe"
-  },
-  {
    "id": "07dcf13d42",
    "uk": "другої години",
    "en": "two o'clock"
+  },
+  {
+   "id": "ba5843295e",
+   "uk": "дякую за пораду",
+   "en": "thank you for the advice"
+  },
+  {
+   "id": "0646664d45",
+   "uk": "дізнаємося",
+   "en": "we will find out"
   },
   {
    "id": "51be140e66",
@@ -312,6 +377,16 @@
    "en": "dwelling"
   },
   {
+   "id": "81624479c1",
+   "uk": "журавлина",
+   "en": "cranberry"
+  },
+  {
+   "id": "4b1294ad42",
+   "uk": "З мене цього досить.",
+   "en": "I've had enough of this."
+  },
+  {
    "id": "51c7ed3c83",
    "uk": "з одного боку в інший",
    "en": "from one side to the other"
@@ -327,9 +402,14 @@
    "en": "prohibit"
   },
   {
-   "id": "d098ae6a12",
-   "uk": "заґалі",
-   "en": "in general"
+   "id": "b5ceb95ede",
+   "uk": "заздалегідь",
+   "en": "in advance"
+  },
+  {
+   "id": "14be609805",
+   "uk": "заздрю",
+   "en": "I envy"
   },
   {
    "id": "82ebcdb82f",
@@ -342,19 +422,24 @@
    "en": "remains"
   },
   {
-   "id": "a6d8bdbec4",
-   "uk": "запізнився",
-   "en": "late"
+   "id": "f579ba8015",
+   "uk": "заморений",
+   "en": "hungered"
   },
   {
-   "id": "0b49364731",
-   "uk": "Запізнився – I was late",
-   "en": "I was late."
+   "id": "59be67fc01",
+   "uk": "заморені",
+   "en": "frozen"
   },
   {
    "id": "c505bd6c03",
    "uk": "заплющити очі",
    "en": "close your eyes"
+  },
+  {
+   "id": "a6d8bdbec4",
+   "uk": "запізнився",
+   "en": "late"
   },
   {
    "id": "c9cb4d2be4",
@@ -365,6 +450,21 @@
    "id": "f75f905d6a",
    "uk": "застудився",
    "en": "caught a cold"
+  },
+  {
+   "id": "82f67f3956",
+   "uk": "захист",
+   "en": "protection"
+  },
+  {
+   "id": "abe9f12b7a",
+   "uk": "захоплюючий сюжет",
+   "en": "exciting plot"
+  },
+  {
+   "id": "d098ae6a12",
+   "uk": "заґалі",
+   "en": "in general"
   },
   {
    "id": "364f74d446",
@@ -382,14 +482,29 @@
    "en": "went to the doctor"
   },
   {
+   "id": "e297f8b642",
+   "uk": "звільнення",
+   "en": "release"
+  },
+  {
+   "id": "8aafea81a1",
+   "uk": "звільнили",
+   "en": "released"
+  },
+  {
+   "id": "c731f56557",
+   "uk": "змінюється",
+   "en": "changes"
+  },
+  {
    "id": "135be3b8bf",
    "uk": "змішаний",
    "en": "mixed"
   },
   {
-   "id": "16310166c7",
-   "uk": "змішаний mixed",
-   "en": "mixed"
+   "id": "248df1da69",
+   "uk": "знайомі",
+   "en": "acquaintances"
   },
   {
    "id": "d6129deb17",
@@ -397,29 +512,19 @@
    "en": "Armed Forces of Ukraine"
   },
   {
-   "id": "f9e55d48b4",
-   "uk": "іноді віпіваю склянку апелсінового соку",
-   "en": "sometimes I drink a glass of orange juice"
-  },
-  {
    "id": "9bbf4c5351",
    "uk": "ймовірно",
    "en": "probably"
   },
   {
-   "id": "83b59c2ff8",
-   "uk": "ймовірно probably",
-   "en": "probably"
+   "id": "d79637f2bc",
+   "uk": "кав'ярня",
+   "en": "cafe"
   },
   {
    "id": "6fca0b6fa1",
    "uk": "кажуть шо",
    "en": "they say that"
-  },
-  {
-   "id": "ea4782271a",
-   "uk": "кімнатні рослини",
-   "en": "houseplants"
   },
   {
    "id": "f036e3a7ec",
@@ -432,6 +537,11 @@
    "en": "use"
   },
   {
+   "id": "30c1088ce7",
+   "uk": "Котра година",
+   "en": "What time is it"
+  },
+  {
    "id": "fdee3a5f90",
    "uk": "краватка",
    "en": "tie"
@@ -442,9 +552,29 @@
    "en": "crisis"
   },
   {
+   "id": "ceb479c5c1",
+   "uk": "крок",
+   "en": "step"
+  },
+  {
+   "id": "2e6bc8b001",
+   "uk": "крім",
+   "en": "except"
+  },
+  {
    "id": "1b64e56697",
    "uk": "кумедні",
    "en": "funny"
+  },
+  {
+   "id": "ee7b627ae4",
+   "uk": "куштувати",
+   "en": "taste"
+  },
+  {
+   "id": "ea4782271a",
+   "uk": "кімнатні рослини",
+   "en": "houseplants"
   },
   {
    "id": "bbdf41004e",
@@ -457,9 +587,14 @@
    "en": "barely"
   },
   {
-   "id": "7331338860",
-   "uk": "літні",
-   "en": "summer"
+   "id": "53ea6b202f",
+   "uk": "Личить",
+   "en": "Counts"
+  },
+  {
+   "id": "99cce0ba9b",
+   "uk": "лягати спати",
+   "en": "go to bed"
   },
   {
    "id": "2c552b2f77",
@@ -467,9 +602,24 @@
    "en": "scare"
   },
   {
+   "id": "7331338860",
+   "uk": "літні",
+   "en": "summer"
+  },
+  {
+   "id": "e8d9599d0e",
+   "uk": "ліхтарики",
+   "en": "flashlights"
+  },
+  {
    "id": "39af03893d",
    "uk": "м'язи",
    "en": "muscles"
+  },
+  {
+   "id": "ab0d343a97",
+   "uk": "майбутній час",
+   "en": "future tense"
   },
   {
    "id": "4cc60fdc73",
@@ -477,14 +627,14 @@
    "en": "travel"
   },
   {
+   "id": "29bbdf1d81",
+   "uk": "мене вивести з рівноваги",
+   "en": "to throw me off balance"
+  },
+  {
    "id": "60276e9176",
    "uk": "Мені пощастило",
    "en": "I was lucky."
-  },
-  {
-   "id": "55f4321a25",
-   "uk": "мені цьоgо досит",
-   "en": "I've had enough of this."
   },
   {
    "id": "271a63e8d3",
@@ -497,9 +647,24 @@
    "en": "last year"
   },
   {
+   "id": "244df703b0",
+   "uk": "мистецтво",
+   "en": "art"
+  },
+  {
    "id": "0cfaa942ea",
    "uk": "миттєва",
    "en": "instantaneous"
+  },
+  {
+   "id": "321094ef88",
+   "uk": "Моя хата зкраю",
+   "en": "My house is stolen."
+  },
+  {
+   "id": "015b314a38",
+   "uk": "моє ставлення",
+   "en": "my attitude"
   },
   {
    "id": "b06b7a7faa",
@@ -507,14 +672,9 @@
    "en": "migration"
   },
   {
-   "id": "dfeab4edb0",
-   "uk": "моиа ставленіиа",
-   "en": "my attitude"
-  },
-  {
-   "id": "321094ef88",
-   "uk": "Моя хата зкраю",
-   "en": "My house is stolen."
+   "id": "b1a6c9b2d8",
+   "uk": "міцні напої",
+   "en": "strong drinks"
   },
   {
    "id": "adfba88559",
@@ -527,14 +687,34 @@
    "en": "on the island"
   },
   {
-   "id": "052e168ec8",
-   "uk": "навіть",
-   "en": "even"
+   "id": "a09d29216f",
+   "uk": "набирати зайву вагу",
+   "en": "to gain weight"
   },
   {
    "id": "7648919d67",
    "uk": "навколо",
    "en": "around"
+  },
+  {
+   "id": "052e168ec8",
+   "uk": "навіть",
+   "en": "even"
+  },
+  {
+   "id": "e42dea63b6",
+   "uk": "над собою",
+   "en": "above oneself"
+  },
+  {
+   "id": "f2ea7dc3c0",
+   "uk": "надавати перевагу",
+   "en": "to prefer"
+  },
+  {
+   "id": "3bd04d7f6d",
+   "uk": "назва",
+   "en": "name"
   },
   {
    "id": "c2dc575e58",
@@ -562,6 +742,11 @@
    "en": "grate"
   },
   {
+   "id": "fc0d505ceb",
+   "uk": "наче з розуму зійшли",
+   "en": "as if they had gone mad"
+  },
+  {
    "id": "2e2935b0ec",
    "uk": "начебто",
    "en": "apparently"
@@ -570,6 +755,11 @@
    "id": "adfd6d2ab5",
    "uk": "не встигати",
    "en": "not have time"
+  },
+  {
+   "id": "387e16ce8a",
+   "uk": "не пожалкувала",
+   "en": "did not regret"
   },
   {
    "id": "ea44d6978c",
@@ -582,6 +772,11 @@
    "en": "cold"
   },
   {
+   "id": "40f70a70c4",
+   "uk": "Нервувався",
+   "en": "Nervous"
+  },
+  {
    "id": "2a01dfff38",
    "uk": "нідй",
    "en": "nobody"
@@ -590,6 +785,21 @@
    "id": "8daed9da08",
    "uk": "ніж",
    "en": "than"
+  },
+  {
+   "id": "4c641fd669",
+   "uk": "О десятій вечора",
+   "en": "At ten o'clock in the evening"
+  },
+  {
+   "id": "edff0240f5",
+   "uk": "О шостій годині вечора",
+   "en": "At six o'clock in the evening"
+  },
+  {
+   "id": "402d0aa912",
+   "uk": "об'єднання",
+   "en": "association"
   },
   {
    "id": "a98150b5bc",
@@ -605,6 +815,11 @@
    "id": "5f910ac897",
    "uk": "облаштовувати",
    "en": "to equip"
+  },
+  {
+   "id": "cb042fbd40",
+   "uk": "обмежую",
+   "en": "I limit"
   },
   {
    "id": "c01c74f0c6",
@@ -632,11 +847,6 @@
    "en": "peers"
   },
   {
-   "id": "b4faca3b42",
-   "uk": "однолітки peer",
-   "en": "peers peer"
-  },
-  {
    "id": "2a8ce8b1c6",
    "uk": "одноліток",
    "en": "coeval"
@@ -650,6 +860,11 @@
    "id": "8af0e9a2f7",
    "uk": "одягатися",
    "en": "dress"
+  },
+  {
+   "id": "2fc8b81d29",
+   "uk": "ожеледиця",
+   "en": "ice"
   },
   {
    "id": "ed796a36a1",
@@ -667,6 +882,11 @@
    "en": "heating"
   },
   {
+   "id": "c5cbcee78b",
+   "uk": "останній раз",
+   "en": "last time"
+  },
+  {
    "id": "3f294501a0",
    "uk": "острів",
    "en": "island"
@@ -675,6 +895,11 @@
    "id": "4a0751e89c",
    "uk": "парасолька",
    "en": "umbrella"
+  },
+  {
+   "id": "4e46615100",
+   "uk": "пекти",
+   "en": "bake"
   },
   {
    "id": "97315362d7",
@@ -687,18 +912,193 @@
    "en": "advantages and disadvantages"
   },
   {
+   "id": "369aedf77b",
+   "uk": "переконанання",
+   "en": "conviction"
+  },
+  {
    "id": "8a54e7a5a0",
    "uk": "перемовини",
    "en": "negotiations"
   },
   {
-   "id": "5eb09c3d60",
-   "uk": "пів країни",
-   "en": "half the country"
+   "id": "eb5802ab64",
+   "uk": "першого квітня",
+   "en": "April Fool's Day"
   },
   {
-   "id": "182d42f5ff",
-   "uk": "пів краіні",
+   "id": "b08db86589",
+   "uk": "пиріг",
+   "en": "pie"
+  },
+  {
+   "id": "251567bab7",
+   "uk": "плескати в долоні",
+   "en": "to clap one's hands"
+  },
+  {
+   "id": "70b75571ff",
+   "uk": "пліч-о-пліч",
+   "en": "side by side"
+  },
+  {
+   "id": "38d05eca33",
+   "uk": "поверхи",
+   "en": "floors"
+  },
+  {
+   "id": "6e49955ba7",
+   "uk": "погоджуватися",
+   "en": "to agree"
+  },
+  {
+   "id": "c95b0b675e",
+   "uk": "погоджується",
+   "en": "agrees"
+  },
+  {
+   "id": "e7ed472310",
+   "uk": "погодився",
+   "en": "agreed"
+  },
+  {
+   "id": "f9a13fdc71",
+   "uk": "подвір'я",
+   "en": "yard"
+  },
+  {
+   "id": "637e61b685",
+   "uk": "подорожувати",
+   "en": "travel"
+  },
+  {
+   "id": "9e05ef83d8",
+   "uk": "покращити",
+   "en": "improve"
+  },
+  {
+   "id": "325305af56",
+   "uk": "Помаранчевий",
+   "en": "Orange"
+  },
+  {
+   "id": "8ce8b558ce",
+   "uk": "помилятися",
+   "en": "be wrong"
+  },
+  {
+   "id": "c08667cf94",
+   "uk": "помста",
+   "en": "revenge"
+  },
+  {
+   "id": "0a0cb78f90",
+   "uk": "помститися",
+   "en": "take revenge"
+  },
+  {
+   "id": "bf9867ffcd",
+   "uk": "по-перше",
+   "en": "firstly"
+  },
+  {
+   "id": "53d5ae9da1",
+   "uk": "порада",
+   "en": "advice"
+  },
+  {
+   "id": "e3a70df18d",
+   "uk": "порушення",
+   "en": "violation"
+  },
+  {
+   "id": "1e5ae4b5fc",
+   "uk": "посвідчення водія",
+   "en": "driver's license"
+  },
+  {
+   "id": "00832974d7",
+   "uk": "посмішка",
+   "en": "smile"
+  },
+  {
+   "id": "6dcbdd1d26",
+   "uk": "потрібно",
+   "en": "need"
+  },
+  {
+   "id": "8be03d87be",
+   "uk": "почуття гумору",
+   "en": "humor"
+  },
+  {
+   "id": "f2392df7e9",
+   "uk": "праця",
+   "en": "work"
+  },
+  {
+   "id": "e467a2f418",
+   "uk": "пригощав",
+   "en": "treated"
+  },
+  {
+   "id": "e8cf4adc8e",
+   "uk": "приділяти увагу",
+   "en": "pay attention"
+  },
+  {
+   "id": "44b54fca3d",
+   "uk": "приймати рішення щодо",
+   "en": "to make decisions about"
+  },
+  {
+   "id": "4cb9fbf848",
+   "uk": "приймаєш ліки",
+   "en": "Are you taking medication?"
+  },
+  {
+   "id": "802d89cc6e",
+   "uk": "примусити",
+   "en": "force"
+  },
+  {
+   "id": "f7f6eb2615",
+   "uk": "приносити задоволення",
+   "en": "to bring pleasure"
+  },
+  {
+   "id": "42ebcaefb2",
+   "uk": "провалилися",
+   "en": "failed"
+  },
+  {
+   "id": "5012415d53",
+   "uk": "Прокидатися",
+   "en": "Wake up"
+  },
+  {
+   "id": "6b67704e00",
+   "uk": "проте це , мабуть , все ж більше стереотип , ніж правда",
+   "en": "However, this is probably more of a stereotype than the truth."
+  },
+  {
+   "id": "da08159886",
+   "uk": "проти змін",
+   "en": "against change"
+  },
+  {
+   "id": "4941070f1c",
+   "uk": "протягом",
+   "en": "for"
+  },
+  {
+   "id": "cee759a52c",
+   "uk": "психоаналіз",
+   "en": "psychoanalysis"
+  },
+  {
+   "id": "5eb09c3d60",
+   "uk": "пів країни",
    "en": "half the country"
   },
   {
@@ -727,134 +1127,44 @@
    "en": "care"
   },
   {
-   "id": "38d05eca33",
-   "uk": "поверхи",
-   "en": "floors"
+   "id": "b224ec3d5e",
+   "uk": "пішки",
+   "en": "on foot"
   },
   {
-   "id": "6e49955ba7",
-   "uk": "погоджуватися",
-   "en": "to agree"
+   "id": "03a7800229",
+   "uk": "релігіозні",
+   "en": "religious"
   },
   {
-   "id": "c95b0b675e",
-   "uk": "погоджується",
-   "en": "agrees"
+   "id": "dfdac032e0",
+   "uk": "релігія",
+   "en": "religion"
   },
   {
-   "id": "e7ed472310",
-   "uk": "погодився",
-   "en": "agreed"
+   "id": "eee3182203",
+   "uk": "розвантажити",
+   "en": "unload"
   },
   {
-   "id": "09c2f0ea79",
-   "uk": "погодився agree",
-   "en": "agreed agree"
+   "id": "7e3d6e2700",
+   "uk": "роздягатися",
+   "en": "undress"
   },
   {
-   "id": "f9a13fdc71",
-   "uk": "подвір'я",
-   "en": "yard"
+   "id": "a9d1ac2988",
+   "uk": "розкішні",
+   "en": "luxurious"
   },
   {
-   "id": "637e61b685",
-   "uk": "подорожувати",
-   "en": "travel"
+   "id": "bd99439740",
+   "uk": "розплющити очі",
+   "en": "open your eyes"
   },
   {
-   "id": "51ff612244",
-   "uk": "помаранзгеві",
-   "en": "orange"
-  },
-  {
-   "id": "c08667cf94",
-   "uk": "помста",
-   "en": "revenge"
-  },
-  {
-   "id": "0a0cb78f90",
-   "uk": "помститися",
-   "en": "take revenge"
-  },
-  {
-   "id": "e3a70df18d",
-   "uk": "порушення",
-   "en": "violation"
-  },
-  {
-   "id": "1e5ae4b5fc",
-   "uk": "посвідчення водія",
-   "en": "driver's license"
-  },
-  {
-   "id": "00832974d7",
-   "uk": "посмішка",
-   "en": "smile"
-  },
-  {
-   "id": "8be03d87be",
-   "uk": "почуття гумору",
-   "en": "humor"
-  },
-  {
-   "id": "f2392df7e9",
-   "uk": "праця",
-   "en": "work"
-  },
-  {
-   "id": "e467a2f418",
-   "uk": "пригощав",
-   "en": "treated"
-  },
-  {
-   "id": "dd51b08274",
-   "uk": "пригощав treat",
-   "en": "treated treat"
-  },
-  {
-   "id": "4cb9fbf848",
-   "uk": "приймаєш ліки",
-   "en": "Are you taking medication?"
-  },
-  {
-   "id": "44b54fca3d",
-   "uk": "приймати рішення щодо",
-   "en": "to make decisions about"
-  },
-  {
-   "id": "f7f6eb2615",
-   "uk": "приносити задоволення",
-   "en": "to bring pleasure"
-  },
-  {
-   "id": "36e8998ad8",
-   "uk": "прівет",
-   "en": "hello"
-  },
-  {
-   "id": "42ebcaefb2",
-   "uk": "провалилися",
-   "en": "failed"
-  },
-  {
-   "id": "6b67704e00",
-   "uk": "проте це , мабуть , все ж більше стереотип , ніж правда",
-   "en": "However, this is probably more of a stereotype than the truth."
-  },
-  {
-   "id": "da08159886",
-   "uk": "проти змін",
-   "en": "against change"
-  },
-  {
-   "id": "4941070f1c",
-   "uk": "протягом",
-   "en": "for"
-  },
-  {
-   "id": "cee759a52c",
-   "uk": "психоаналіз",
-   "en": "psychoanalysis"
+   "id": "69ee6cd549",
+   "uk": "розумію",
+   "en": "I understand"
   },
   {
    "id": "35a10611d1",
@@ -877,29 +1187,9 @@
    "en": "a year ago"
   },
   {
-   "id": "a9d1ac2988",
-   "uk": "розкішні",
-   "en": "luxurious"
-  },
-  {
-   "id": "bd99439740",
-   "uk": "розплющити очі",
-   "en": "open your eyes"
-  },
-  {
    "id": "aab4c0758b",
    "uk": "саме цю роботу",
    "en": "this very job"
-  },
-  {
-   "id": "9694f34d80",
-   "uk": "саме цю роботу this job",
-   "en": "this job"
-  },
-  {
-   "id": "d337cc2f67",
-   "uk": "свідок",
-   "en": "witness"
   },
   {
    "id": "3e69385503",
@@ -907,9 +1197,24 @@
    "en": "holiday"
   },
   {
+   "id": "d337cc2f67",
+   "uk": "свідок",
+   "en": "witness"
+  },
+  {
+   "id": "2f5f68bf50",
+   "uk": "серед",
+   "en": "among"
+  },
+  {
    "id": "5f431bf48c",
    "uk": "скаржитися",
    "en": "complain"
+  },
+  {
+   "id": "bc194f5bfc",
+   "uk": "скласти іспити",
+   "en": "to pass exams"
   },
   {
    "id": "8de806b86a",
@@ -922,9 +1227,24 @@
    "en": "abbreviation"
   },
   {
+   "id": "252d77584b",
+   "uk": "слизько",
+   "en": "Slippery floor and danger of falling"
+  },
+  {
    "id": "4e10c02201",
    "uk": "смажити на сковорідці",
    "en": "to fry in a pan"
+  },
+  {
+   "id": "7572b77e98",
+   "uk": "сміливий",
+   "en": "bold"
+  },
+  {
+   "id": "1680b50ff7",
+   "uk": "солодкий",
+   "en": "sweet"
   },
   {
    "id": "fdadb9bba1",
@@ -932,28 +1252,8 @@
    "en": "sunflower"
   },
   {
-   "id": "194cc487d4",
-   "uk": "сотз мерзгакгі",
-   "en": "sotz merzgakki"
-  },
-  {
-   "id": "5a9007a827",
-   "uk": "співбесіда",
-   "en": "interview"
-  },
-  {
-   "id": "1d94106954",
-   "uk": "співбесіда interview",
-   "en": "interview interview"
-  },
-  {
    "id": "d1c88f4da4",
    "uk": "сподіваюсь",
-   "en": "I hope"
-  },
-  {
-   "id": "0a839f663d",
-   "uk": "сподіваюсь I hope",
    "en": "I hope"
   },
   {
@@ -967,6 +1267,16 @@
    "en": "promote"
   },
   {
+   "id": "5a9007a827",
+   "uk": "співбесіда",
+   "en": "interview"
+  },
+  {
+   "id": "82605ce7c2",
+   "uk": "спілка",
+   "en": "union"
+  },
+  {
    "id": "bc3ff3580e",
    "uk": "Ставлення",
    "en": "Attitude"
@@ -977,9 +1287,19 @@
    "en": "path"
   },
   {
+   "id": "b956f045d0",
+   "uk": "стосунки",
+   "en": "relationship"
+  },
+  {
    "id": "ba05d60fde",
    "uk": "судові",
    "en": "judicial"
+  },
+  {
+   "id": "63b734a802",
+   "uk": "суспільство",
+   "en": "society"
   },
   {
    "id": "bad338f790",
@@ -992,9 +1312,24 @@
    "en": "grabbed"
   },
   {
+   "id": "c72072b103",
+   "uk": "сітки",
+   "en": "nets"
+  },
+  {
    "id": "17be5cbfdc",
    "uk": "трапляється",
    "en": "happens"
+  },
+  {
+   "id": "8da3224eef",
+   "uk": "Тривати",
+   "en": "Last"
+  },
+  {
+   "id": "1cead39bc9",
+   "uk": "трошки більше ніж",
+   "en": "a little more than"
   },
   {
    "id": "b25ba3481a",
@@ -1005,6 +1340,26 @@
    "id": "79f75b5c10",
    "uk": "У кожного є своя голова на плечах.",
    "en": "Everyone has their own head on their shoulders."
+  },
+  {
+   "id": "b9740c9f27",
+   "uk": "у колі",
+   "en": "in a circle"
+  },
+  {
+   "id": "b268044619",
+   "uk": "у моєму будинку",
+   "en": "in my house"
+  },
+  {
+   "id": "abcc254153",
+   "uk": "у соціальних мережах",
+   "en": "on social networks"
+  },
+  {
+   "id": "9fea63cefd",
+   "uk": "удосконалити",
+   "en": "to improve"
   },
   {
    "id": "243ff9155e",
@@ -1027,11 +1382,6 @@
    "en": "paint"
   },
   {
-   "id": "cdebc76191",
-   "uk": "фарбуиут",
-   "en": "paint"
-  },
-  {
    "id": "72b65ffe1e",
    "uk": "фарбують",
    "en": "are painting"
@@ -1042,19 +1392,14 @@
    "en": "Let . Let"
   },
   {
+   "id": "2c4f758032",
+   "uk": "15 хвилин",
+   "en": "15 minutes"
+  },
+  {
    "id": "1d02816224",
    "uk": "хлопець",
    "en": "boy"
-  },
-  {
-   "id": "a6dfcfb181",
-   "uk": "хотів",
-   "en": "wanted"
-  },
-  {
-   "id": "e4958b6b34",
-   "uk": "хотів wanted",
-   "en": "wanted"
   },
   {
    "id": "aaca6abbf4",
@@ -1067,14 +1412,14 @@
    "en": "vats"
   },
   {
-   "id": "56058613ba",
-   "uk": "ШІ",
-   "en": "AI"
-  },
-  {
    "id": "e9b3e83542",
    "uk": "шкарпетки",
    "en": "socks"
+  },
+  {
+   "id": "93ef78346f",
+   "uk": "шкідливі звички",
+   "en": "bad habits"
   },
   {
    "id": "f499c83d68",
@@ -1087,13 +1432,13 @@
    "en": "artificial intelligence"
   },
   {
-   "id": "b41e7c3a66",
-   "uk": "що стосується віку",
-   "en": "regarding age"
+   "id": "56058613ba",
+   "uk": "ШІ",
+   "en": "AI"
   },
   {
-   "id": "f23af96c6d",
-   "uk": "що стосується віку regarding age",
+   "id": "b41e7c3a66",
+   "uk": "що стосується віку",
    "en": "regarding age"
   },
   {
@@ -1102,9 +1447,19 @@
    "en": "I didn't have time."
   },
   {
+   "id": "838df420de",
+   "uk": "я раджу",
+   "en": "I advise"
+  },
+  {
    "id": "3ca967e0e1",
    "uk": "як підліток",
    "en": "as a teenager"
+  },
+  {
+   "id": "f9e55d48b4",
+   "uk": "іноді віпіваю склянку апелсінового соку",
+   "en": "sometimes I drink a glass of orange juice"
   }
  ]
 }
