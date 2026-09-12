@@ -1,5 +1,5 @@
 {
- "count": 292,
+ "count": 305,
  "words": [
   {
    "id": "d42d7ebffb",
@@ -77,6 +77,16 @@
    "en": "in the evening"
   },
   {
+   "id": "aeaeff2de9",
+   "uk": "велетень",
+   "en": "giant"
+  },
+  {
+   "id": "157c02f331",
+   "uk": "веселощі",
+   "en": "merriment"
+  },
+  {
    "id": "9dcc0c2366",
    "uk": "взагалі",
    "en": "in general"
@@ -95,6 +105,11 @@
    "id": "66cdf8c5d4",
    "uk": "вирішувати",
    "en": "solve"
+  },
+  {
+   "id": "6f5c1e86cf",
+   "uk": "висота",
+   "en": "height (for a building)"
   },
   {
    "id": "b32ea98eef",
@@ -287,6 +302,11 @@
    "en": "era"
   },
   {
+   "id": "08e129d842",
+   "uk": "довжина",
+   "en": "length"
+  },
+  {
    "id": "8544d823b2",
    "uk": "договір про корисні копалини",
    "en": "mineral agreement"
@@ -295,6 +315,11 @@
    "id": "df1ad6f87e",
    "uk": "додати спеції",
    "en": "add spices"
+  },
+  {
+   "id": "de5cd3b30e",
+   "uk": "додаток",
+   "en": "addition"
   },
   {
    "id": "f842cd6765",
@@ -325,6 +350,11 @@
    "id": "a7f1ae68bb",
    "uk": "домовленність",
    "en": "agreement"
+  },
+  {
+   "id": "52d0c5f3c8",
+   "uk": "дорослі",
+   "en": "adults"
   },
   {
    "id": "3f7ae72032",
@@ -387,6 +417,11 @@
    "en": "I've had enough of this."
   },
   {
+   "id": "5606bf2029",
+   "uk": "з одного боку",
+   "en": "on the one hand"
+  },
+  {
    "id": "51c7ed3c83",
    "uk": "з одного боку в інший",
    "en": "from one side to the other"
@@ -395,6 +430,11 @@
    "id": "0c2c1d963c",
    "uk": "з особливості",
    "en": "with a feature"
+  },
+  {
+   "id": "d2456793f5",
+   "uk": "з іншого боку",
+   "en": "on the other hand"
   },
   {
    "id": "386f3998ef",
@@ -1007,6 +1047,11 @@
    "en": "advice"
   },
   {
+   "id": "d5008be984",
+   "uk": "поржня ваза",
+   "en": "vase"
+  },
+  {
    "id": "e3a70df18d",
    "uk": "порушення",
    "en": "violation"
@@ -1122,6 +1167,11 @@
    "en": "to support"
   },
   {
+   "id": "892c1fe54d",
+   "uk": "підхід до",
+   "en": "approach to"
+  },
+  {
    "id": "7b9d9699ec",
    "uk": "піклуватися",
    "en": "care"
@@ -1140,6 +1190,11 @@
    "id": "dfdac032e0",
    "uk": "релігія",
    "en": "religion"
+  },
+  {
+   "id": "38aab36a3a",
+   "uk": "розваги",
+   "en": "entertainment"
   },
   {
    "id": "eee3182203",
@@ -1297,6 +1352,11 @@
    "en": "judicial"
   },
   {
+   "id": "4df67a2579",
+   "uk": "сумніватися",
+   "en": "doubt"
+  },
+  {
    "id": "63b734a802",
    "uk": "суспільство",
    "en": "society"
@@ -1400,6 +1460,11 @@
    "id": "1d02816224",
    "uk": "хлопець",
    "en": "boy"
+  },
+  {
+   "id": "412c151f33",
+   "uk": "хліб",
+   "en": "bread"
   },
   {
    "id": "aaca6abbf4",
