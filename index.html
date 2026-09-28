@@ -88,6 +88,9 @@
     overflow-wrap: anywhere;
   }
 
+  .word-en { font-family: var(--sans); font-weight: 500; font-size: clamp(1.8rem, 9vw, 2.8rem); }
+  .opt-uk { font-family: var(--serif); font-size: 1.15rem; }
+
   .pos {
     font-size: 0.8rem;
     color: var(--ink-soft);
@@ -282,6 +285,7 @@
   var index = 0;
   var results = [];
   var answered = false;
+  var flipped = [];
 
   // ---------- storage ----------
 
@@ -378,20 +382,87 @@
     })).slice(0, SESSION_SIZE);
   }
 
-  // Distractors have to be competitive or the question answers itself.
-  // Never two options with the same English.
+  // ---------- tricky wrong answers ----------
+  // Wrong answers are chosen to look like the right one, so shape alone
+  // never gives it away: a sentence competes with sentences, a verb with
+  // verbs, and where possible the Ukrainian looks alike too (same start,
+  // same ending), so a half-remembered word is a real trap.
+
+  // How often the question flips: English shown, pick the Ukrainian.
+  var REVERSE_SHARE = 0.35;
+
+  function plainEn(s) { return s.toLowerCase().replace(/[.!?,]+$/g, "").replace(/\s+/g, " ").trim(); }
+
+  var featCache = {};
+  function feat(w) {
+    if (featCache[w.id]) return featCache[w.id];
+    var en = plainEn(w.en).replace(/[\/\s]+$/, "");
+    var uk = w.uk.toLowerCase().replace(/[^Ѐ-ӿ' ]+/g, "").replace(/\s+/g, " ").trim();
+    var enN = en.split(" ").length, ukN = uk.split(" ").length;
+    var kind = (enN >= 4 || ukN >= 4 || /[.!?]$/.test(w.en.trim())) ? "sentence"
+             : (enN >= 2 || ukN >= 2) ? "phrase" : "word";
+    var verb = /^to /.test(en) || /(ти|тися|тись)$/.test(uk);
+    var grams = {};
+    var u = " " + uk + " ";
+    for (var i = 0; i < u.length - 1; i++) grams[u.substr(i, 2)] = true;
+    return (featCache[w.id] = {
+      en: en, uk: uk, enN: enN, kind: kind, verb: verb, grams: grams,
+      head: uk.slice(0, 2), tail: uk.slice(-2), len: en.length
+    });
+  }
+
+  function dice(a, b) {
+    var n = 0, na = 0, nb = 0, k;
+    for (k in a) { na++; if (b[k]) n++; }
+    for (k in b) nb++;
+    return na + nb ? 2 * n / (na + nb) : 0;
+  }
+
+  // Would this wrong answer also be right, or too close to call fairly?
+  function tooClose(a, b) {
+    if (a.en === b.en || a.uk === b.uk) return true;
+    if (a.en.length >= 4 && b.en.length >= 4 && (a.en.indexOf(b.en) >= 0 || b.en.indexOf(a.en) >= 0)) return true;
+    return false;
+  }
+
+  function confusability(a, b) {
+    var s = 0;
+    s += a.kind === b.kind ? 5 : -5;
+    s += a.verb === b.verb ? 2 : -2;
+    s -= Math.abs(a.enN - b.enN);
+    s -= 2 * Math.abs(a.len - b.len) / Math.max(a.len, b.len);
+    s += 4 * dice(a.grams, b.grams);
+    if (a.head === b.head) s += 1.5;
+    if (a.tail === b.tail) s += 1.5;
+    if (a.en.slice(-2) === b.en.slice(-2)) s += 1;
+    return s + Math.random() * 1.5; // a little variety between sessions
+  }
+
   function distractorsFor(word) {
-    var taken = {};
-    taken[word.en.toLowerCase()] = true;
+    var fw = feat(word);
+    var ranked = [];
+    words.forEach(function (w) {
+      if (w.id === word.id) return;
+      var f = feat(w);
+      if (tooClose(fw, f)) return;
+      ranked.push({ w: w, f: f, s: confusability(fw, f) });
+    });
+    ranked.sort(function (a, b) { return b.s - a.s; });
+
     var picked = [];
-    var pool = shuffle(words.slice());
-    for (var i = 0; i < pool.length && picked.length < CHOICES - 1; i++) {
-      var key = pool[i].en.toLowerCase();
-      if (pool[i].id === word.id || taken[key]) continue;
-      taken[key] = true;
-      picked.push(pool[i]);
+    for (var i = 0; i < ranked.length && picked.length < CHOICES - 1; i++) {
+      var c = ranked[i];
+      if (picked.some(function (p) { return tooClose(feat(p), c.f); })) continue;
+      picked.push(c.w);
     }
     return picked;
+  }
+
+  // Same capitalisation and no trailing full stop on every option, so the
+  // odd one out cannot be spotted by its punctuation.
+  function display(s) {
+    s = s.trim().replace(/[.\/\s]+$/, "");
+    return s.charAt(0).toUpperCase() + s.slice(1);
   }
 
   // ---------- rendering ----------
@@ -406,6 +477,7 @@
   function renderQuestion() {
     answered = false;
     var word = session[index];
+    var reverse = flipped[index];
     var options = shuffle(distractorsFor(word).concat([word]));
 
     app.innerHTML = "";
@@ -420,14 +492,14 @@
     app.appendChild(ticks);
 
     var meta = el("div", "meta");
-    meta.appendChild(el("span", null, (index + 1) + " of " + session.length + (mode === "review" ? " · review" : "")));
+    meta.appendChild(el("span", null, (index + 1) + " of " + session.length + (mode === "review" ? " · review" : "") + (reverse ? " · English \u2192 Ukrainian" : "")));
     var p = progress[word.id];
     var tag = p ? "seen " + p.reps + "x" : (addedSinceLastVisit[word.id] ? "just added" : "new word");
     meta.appendChild(el("span", null, tag));
     app.appendChild(meta);
 
     var stage = el("div", "stage");
-    stage.appendChild(el("h1", "word", word.uk));
+    stage.appendChild(el("h1", reverse ? "word word-en" : "word", reverse ? display(word.en) : word.uk));
     var verdict = el("div", "verdict");
     verdict.setAttribute("aria-live", "polite");
     stage.appendChild(verdict);
@@ -438,7 +510,7 @@
     options.forEach(function (opt, i) {
       var b = el("button", "choice");
       b.appendChild(el("span", "key", String(i + 1)));
-      b.appendChild(el("span", null, opt.en));
+      b.appendChild(el("span", reverse ? "opt-uk" : null, display(reverse ? opt.uk : opt.en)));
       choices.appendChild(b);
       buttons.push(b);
     });
@@ -486,7 +558,7 @@
     });
 
     verdict.className = "verdict " + (correct ? "right" : "wrong");
-    verdict.textContent = correct ? "Correct" : word.uk + " means " + word.en;
+    verdict.textContent = correct ? "Correct" : word.uk + " means \u201c" + word.en + "\u201d";
 
     ticks.children[index].className = "tick " + (correct ? "done" : "miss");
     results.push({ word: word, correct: correct });
@@ -582,6 +654,7 @@
     session = mode === "review" ? buildReviewSession() : buildNewSession();
     index = 0;
     results = [];
+    flipped = session.map(function () { return Math.random() < REVERSE_SHARE; });
     if (!session.length) {
       renderEmpty("Nothing to study. Add some words to the sheet.");
       return;

@@ -1,5 +1,5 @@
 // Cache version. Bump this whenever index.html changes.
-var CACHE = "uk-vocab-v4";
+var CACHE = "uk-vocab-v5";
 
 var SHELL = [
   "./",
