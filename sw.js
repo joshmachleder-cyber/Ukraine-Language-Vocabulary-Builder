@@ -1,11 +1,11 @@
-// Cache version. Bump this whenever index.html changes, or phones with the
-// app on the home screen will keep running the old copy.
-var CACHE = "uk-vocab-v3";
+// Cache version. Bump this whenever index.html changes.
+var CACHE = "uk-vocab-v4";
 
 var SHELL = [
   "./",
   "./index.html",
-  "./manifest.webmanifest"
+  "./manifest.webmanifest",
+  "./words.json"
 ];
 
 self.addEventListener("install", function(e){
@@ -25,35 +25,20 @@ self.addEventListener("activate", function(e){
   );
 });
 
-function isWordList(url){
-  return url.indexOf("docs.google.com") >= 0
-      || url.indexOf("googleusercontent.com") >= 0
-      || url.indexOf("words.json") >= 0;
-}
-
 self.addEventListener("fetch", function(e){
-  var url = e.request.url;
+  // The Google Sheet is left alone: the page reads it fresh every time and
+  // keeps its own copy for offline use.
+  if (e.request.url.indexOf(self.location.origin) !== 0) return;
 
-  // The word list is the one thing that changes daily. Always try the
-  // network first and fall back to the cached copy, so an offline session
-  // still works but a fresh one gets today's words.
-  if (isWordList(url)){
-    e.respondWith(
-      fetch(e.request).then(function(res){
-        var copy = res.clone();
-        caches.open(CACHE).then(function(c){ c.put(e.request, copy); });
-        return res;
-      }).catch(function(){
-        return caches.match(e.request);
-      })
-    );
-    return;
-  }
-
-  // Everything else is the app shell: cache first.
+  // App files: network first, so changes to the app show up right away,
+  // with the cached copy as the offline fallback.
   e.respondWith(
-    caches.match(e.request).then(function(hit){
-      return hit || fetch(e.request);
+    fetch(e.request).then(function(res){
+      var copy = res.clone();
+      caches.open(CACHE).then(function(c){ c.put(e.request, copy); });
+      return res;
+    }).catch(function(){
+      return caches.match(e.request);
     })
   );
 });

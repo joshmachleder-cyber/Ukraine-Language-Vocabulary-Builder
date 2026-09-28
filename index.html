@@ -213,6 +213,28 @@
   .missed .uk { font-family: var(--serif); font-size: 1.15rem; }
   .missed .en { color: var(--ink-soft); text-align: right; }
 
+  .ghost {
+    margin-top: 0.5rem;
+    width: 100%;
+    font: inherit;
+    font-size: 1rem;
+    padding: 0.9rem;
+    border: 1px solid var(--ink);
+    border-radius: 10px;
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+  }
+
+  .coverage { margin: 0 0 1.5rem; }
+  .bar { height: 6px; border-radius: 3px; background: var(--rule); overflow: hidden; }
+  .bar span { display: block; height: 100%; background: var(--ink); }
+  .coverage-nums {
+    display: flex; justify-content: space-between;
+    font-size: 0.75rem; color: var(--ink-soft); margin-top: 0.4rem;
+    font-variant-numeric: tabular-nums;
+  }
+
   .quiet {
     background: none;
     border: 0;
@@ -236,66 +258,61 @@
 (function () {
   "use strict";
 
+  // The published CSV of the Google Sheet. The app reads it fresh every time
+  // it opens, so a word added to the sheet shows up on the next open.
+  var SHEET_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRcnkya4NOgRhpnO_UivuiTA9KdcoTLDbXJn7wELk1PBgXWfOsMSLFqyxeoz3dr7uco6g27rhOQEQKZ/pub?gid=0&single=true&output=csv";
+
   var SESSION_SIZE = 20;
   var CHOICES = 4;
-  var STORE_KEY = "uk-vocab-progress-v1";
+  var STORE_KEY = "uk-vocab-progress-v1";   // unchanged, so your history carries over
+  var LAST_KEY = "uk-vocab-last-session";    // ids shown in the previous session
+  var LIST_KEY = "uk-vocab-known-list";      // ids that were on the sheet last time
+  var SHEET_CACHE_KEY = "uk-vocab-sheet-cache";
 
   // When you tap the happy face on a word you got right, it retires.
-  // RETIRE_DAYS is how long until it comes back once for a confirmation check.
-  // Set it to null to retire the word permanently and never see it again.
+  // RETIRE_DAYS is how long until it can come back in the review pile.
   var RETIRE_DAYS = 60;
-
-  // Days until a word comes back, by how many times you have got it right in a row.
-  var LADDER = [1, 3, 7, 16, 35, 75, 150];
 
   var app = document.getElementById("app");
   var words = [];
-  var progress = loadProgress();
+  var addedSinceLastVisit = {};
+  var progress = loadJSON(STORE_KEY, {});
   var session = [];
+  var mode = "new";
   var index = 0;
   var results = [];
   var answered = false;
 
   // ---------- storage ----------
 
-  function loadProgress() {
-    try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; }
-    catch (e) { return {}; }
+  function loadJSON(key, fallback) {
+    try { var v = JSON.parse(localStorage.getItem(key)); return v == null ? fallback : v; }
+    catch (e) { return fallback; }
   }
 
-  function saveProgress() {
-    try { localStorage.setItem(STORE_KEY, JSON.stringify(progress)); }
+  function saveJSON(key, value) {
+    try { localStorage.setItem(key, JSON.stringify(value)); }
     catch (e) { /* private browsing, nothing to do */ }
   }
 
-  // Two signals now: whether you picked right, and whether you say you know it.
+  function saveProgress() { saveJSON(STORE_KEY, progress); }
+
+  // Two signals: whether you picked right, and whether you say you know it.
   function record(word, correct, known) {
     var p = progress[word.id] || { streak: 0, reps: 0, lapses: 0, due: 0 };
     p.reps += 1;
     p.seen = Date.now();
 
     if (correct && known) {
-      // Retired. Comes back once for a confirmation check, or never.
       p.streak += 1;
       p.known = true;
-      p.due = RETIRE_DAYS === null ? Infinity : Date.now() + RETIRE_DAYS * 86400000;
-    } else if (correct && !known) {
-      // Right answer, but you are not confident. Probably a guess. Back tomorrow.
-      p.streak = 0;
-      p.known = false;
-      p.due = Date.now() + 86400000;
-    } else if (!correct && known) {
-      // Wrong, but you say you knew it. Misclick or near miss. Back tomorrow.
-      p.streak = 0;
-      p.known = false;
-      p.lapses += 1;
-      p.due = Date.now() + 86400000;
+      p.due = Date.now() + RETIRE_DAYS * 86400000;
     } else {
-      // Wrong and you know it. Back in ten minutes.
+      // Anything short of "right and I know it" goes in the review pile.
       p.streak = 0;
       p.known = false;
-      p.lapses += 1;
-      p.due = Date.now() + 600000;
+      if (!correct) p.lapses += 1;
+      p.due = Date.now();
     }
 
     progress[word.id] = p;
@@ -303,38 +320,6 @@
   }
 
   // ---------- session building ----------
-
-  function tally() {
-    var now = Date.now();
-    var t = { due: 0, fresh: 0, retired: 0, resting: 0 };
-    words.forEach(function (w) {
-      var p = progress[w.id];
-      if (!p) t.fresh += 1;
-      else if (p.due <= now) t.due += 1;
-      else if (p.known) t.retired += 1;
-      else t.resting += 1;
-    });
-    return t;
-  }
-
-  function buildSession() {
-    var now = Date.now();
-    var due = [], fresh = [], resting = [];
-
-    words.forEach(function (w) {
-      var p = progress[w.id];
-      if (!p) fresh.push(w);
-      else if (p.due <= now) due.push(w);
-      else resting.push(w);
-    });
-
-    due.sort(function (a, b) { return progress[a.id].due - progress[b.id].due; });
-    resting.sort(function (a, b) { return progress[a.id].due - progress[b.id].due; });
-
-    // Words you do not know come first, then words you have never seen.
-    // Resting words only pad out a session that would otherwise be short.
-    return due.concat(fresh, resting).slice(0, SESSION_SIZE);
-  }
 
   function shuffle(arr) {
     for (var i = arr.length - 1; i > 0; i--) {
@@ -344,31 +329,67 @@
     return arr;
   }
 
-  // Distractors have to be competitive or the question answers itself.
-  // Same part of speech first, and never two options with the same English.
-  function distractorsFor(word) {
-    var taken = { };
-    taken[word.en.toLowerCase()] = true;
-
-    var samePos = [], anyPos = [];
+  function tally() {
+    var now = Date.now();
+    var t = { total: words.length, seen: 0, fresh: 0, review: 0, known: 0 };
     words.forEach(function (w) {
-      if (w.id === word.id) return;
-      var key = w.en.toLowerCase();
-      if (taken[key]) return;
-      if (word.pos && w.pos === word.pos) samePos.push(w);
-      else anyPos.push(w);
+      var p = progress[w.id];
+      if (!p) { t.fresh += 1; return; }
+      t.seen += 1;
+      if (p.known) t.known += 1;
+      else if (p.due <= now) t.review += 1;
+    });
+    return t;
+  }
+
+  // Default session: words you have never been quizzed on, drawn at random
+  // from the whole sheet, so rows near the bottom get picked as often as rows
+  // near the top. Words added to the sheet since your last visit go first.
+  // Nothing from the previous session is repeated.
+  function buildNewSession() {
+    var last = {};
+    loadJSON(LAST_KEY, []).forEach(function (id) { last[id] = true; });
+
+    var justAdded = [], unseen = [], seen = [];
+    words.forEach(function (w) {
+      if (progress[w.id]) { if (!last[w.id]) seen.push(w); }
+      else if (addedSinceLastVisit[w.id]) justAdded.push(w);
+      else unseen.push(w);
     });
 
+    var picked = shuffle(justAdded).concat(shuffle(unseen)).slice(0, SESSION_SIZE);
+
+    // Once every word on the sheet has been seen, fill with the ones you have
+    // gone longest without, still skipping last session's words.
+    if (picked.length < SESSION_SIZE) {
+      seen.sort(function (a, b) { return progress[a.id].seen - progress[b.id].seen; });
+      var oldest = shuffle(seen.slice(0, Math.max(SESSION_SIZE * 3, 60)));
+      picked = picked.concat(oldest.slice(0, SESSION_SIZE - picked.length));
+    }
+    return picked;
+  }
+
+  // Review session: only the words you missed or marked "not yet".
+  function buildReviewSession() {
+    var now = Date.now();
+    return shuffle(words.filter(function (w) {
+      var p = progress[w.id];
+      return p && !p.known && p.due <= now;
+    })).slice(0, SESSION_SIZE);
+  }
+
+  // Distractors have to be competitive or the question answers itself.
+  // Never two options with the same English.
+  function distractorsFor(word) {
+    var taken = {};
+    taken[word.en.toLowerCase()] = true;
     var picked = [];
-    var pools = [shuffle(samePos), shuffle(anyPos)];
-    for (var p = 0; p < pools.length && picked.length < CHOICES - 1; p++) {
-      for (var i = 0; i < pools[p].length && picked.length < CHOICES - 1; i++) {
-        var cand = pools[p][i];
-        var key = cand.en.toLowerCase();
-        if (taken[key]) continue;
-        taken[key] = true;
-        picked.push(cand);
-      }
+    var pool = shuffle(words.slice());
+    for (var i = 0; i < pool.length && picked.length < CHOICES - 1; i++) {
+      var key = pool[i].en.toLowerCase();
+      if (pool[i].id === word.id || taken[key]) continue;
+      taken[key] = true;
+      picked.push(pool[i]);
     }
     return picked;
   }
@@ -399,14 +420,14 @@
     app.appendChild(ticks);
 
     var meta = el("div", "meta");
-    meta.appendChild(el("span", null, (index + 1) + " of " + session.length));
+    meta.appendChild(el("span", null, (index + 1) + " of " + session.length + (mode === "review" ? " · review" : "")));
     var p = progress[word.id];
-    meta.appendChild(el("span", null, p ? "seen " + p.reps + "x" : "new word"));
+    var tag = p ? "seen " + p.reps + "x" : (addedSinceLastVisit[word.id] ? "just added" : "new word");
+    meta.appendChild(el("span", null, tag));
     app.appendChild(meta);
 
     var stage = el("div", "stage");
     stage.appendChild(el("h1", "word", word.uk));
-    if (word.pos) stage.appendChild(el("div", "pos", word.pos));
     var verdict = el("div", "verdict");
     verdict.setAttribute("aria-live", "polite");
     stage.appendChild(verdict);
@@ -418,7 +439,6 @@
       var b = el("button", "choice");
       b.appendChild(el("span", "key", String(i + 1)));
       b.appendChild(el("span", null, opt.en));
-      // handler attached below, once the rating row exists
       choices.appendChild(b);
       buttons.push(b);
     });
@@ -439,7 +459,6 @@
     rate.appendChild(pair);
     app.appendChild(rate);
 
-    // Rebind the choice handlers now that rate exists.
     buttons.forEach(function (b, i) {
       b.onclick = function () { answer(options[i], word, buttons, options, verdict, rate, ticks); };
     });
@@ -467,14 +486,11 @@
     });
 
     verdict.className = "verdict " + (correct ? "right" : "wrong");
-    verdict.textContent = correct
-      ? (word.note ? word.note : "Correct")
-      : word.uk + " means " + word.en + (word.note ? ". " + word.note : "");
+    verdict.textContent = correct ? "Correct" : word.uk + " means " + word.en;
 
     ticks.children[index].className = "tick " + (correct ? "done" : "miss");
     results.push({ word: word, correct: correct });
 
-    // Now you rate it. Nothing is written until you do.
     rate.hidden = false;
     rate.dataset.correct = correct ? "1" : "";
     rate.querySelector(".rate-yes").focus();
@@ -483,10 +499,6 @@
   function rated(word, correct, known) {
     record(word, correct, known);
     results[results.length - 1].known = known;
-    advance();
-  }
-
-  function advance() {
     index += 1;
     if (index < session.length) renderQuestion();
     else renderSummary();
@@ -502,21 +514,25 @@
     var wrap = el("div", "summary");
     var score = el("p", "score");
     score.appendChild(document.createTextNode(String(right)));
-    var small = el("small", null, " / " + results.length);
-    score.appendChild(small);
+    score.appendChild(el("small", null, " / " + results.length));
     wrap.appendChild(score);
 
     var t = tally();
-    var line;
-    if (t.due) {
-      line = t.due + " " + (t.due === 1 ? "word is" : "words are") + " still due. Another round will take them down.";
-    } else if (t.fresh) {
-      line = "Caught up. " + t.fresh + " new " + (t.fresh === 1 ? "word" : "words") + " left to start on.";
-    } else {
-      line = "Caught up, and out of new words. Add more to the sheet before Wednesday.";
-    }
-    if (t.retired) line += " " + t.retired + " retired.";
-    wrap.appendChild(el("p", null, line));
+    wrap.appendChild(el("p", null, t.fresh
+      ? t.fresh + " " + (t.fresh === 1 ? "word" : "words") + " on your sheet you haven't been quizzed on yet."
+      : "You've now seen every word on the sheet. New sessions pick the ones you've gone longest without."));
+
+    var cov = el("div", "coverage");
+    var bar = el("div", "bar");
+    var fill = el("span");
+    fill.style.width = (t.total ? Math.round(100 * t.seen / t.total) : 0) + "%";
+    bar.appendChild(fill);
+    cov.appendChild(bar);
+    var nums = el("div", "coverage-nums");
+    nums.appendChild(el("span", null, t.seen + " of " + t.total + " seen"));
+    nums.appendChild(el("span", null, t.known + " known · " + t.review + " to review"));
+    cov.appendChild(nums);
+    wrap.appendChild(cov);
 
     if (missed.length) {
       var list = el("ul", "missed");
@@ -529,16 +545,23 @@
       wrap.appendChild(list);
     }
 
-    var again = el("button", "next", "Study 20 more");
-    again.addEventListener("click", start);
+    var again = el("button", "next", t.fresh ? "20 new words" : "20 more words");
+    again.addEventListener("click", function () { start("new"); });
     wrap.appendChild(again);
+
+    if (t.review) {
+      var rev = el("button", "ghost", "Review " + Math.min(t.review, SESSION_SIZE) + " words I missed");
+      rev.addEventListener("click", function () { start("review"); });
+      wrap.appendChild(rev);
+    }
 
     var reset = el("button", "quiet", "Reset all progress");
     reset.addEventListener("click", function () {
       if (confirm("Clear every word's review history on this device?")) {
         progress = {};
         saveProgress();
-        start();
+        saveJSON(LAST_KEY, []);
+        start("new");
       }
     });
     wrap.appendChild(reset);
@@ -554,31 +577,179 @@
     app.appendChild(wrap);
   }
 
-  function start() {
-    session = buildSession();
+  function start(which) {
+    mode = which || "new";
+    session = mode === "review" ? buildReviewSession() : buildNewSession();
     index = 0;
     results = [];
     if (!session.length) {
-      renderEmpty("The word list came back empty. Check that the Saturday refresh ran and that words.json has rows in it.");
+      renderEmpty("Nothing to study. Add some words to the sheet.");
       return;
     }
+    saveJSON(LAST_KEY, session.map(function (w) { return w.id; }));
     renderQuestion();
   }
 
+  // ---------- CORE START: reading and cleaning the sheet ----------
+  // Same cleanup rules as build_words.py, so word ids (and your progress) match.
+
+  var CYRILLIC = /[Ѐ-ӿ]/;
+  var LATIN = /[A-Za-z]/;
+  var ERRORS = ["#VALUE!", "#N/A", "#REF!", "#ERROR!", "#NAME?", "#DIV/0!"];
+  var EDGE = " -–—.,;:";
+
+  function parseCSV(text) {
+    var rows = [], row = [], field = "", q = false;
+    for (var i = 0; i < text.length; i++) {
+      var c = text[i];
+      if (q) {
+        if (c === '"') { if (text[i + 1] === '"') { field += '"'; i++; } else q = false; }
+        else field += c;
+      } else if (c === '"') q = true;
+      else if (c === ",") { row.push(field); field = ""; }
+      else if (c === "\n") { row.push(field); rows.push(row); row = []; field = ""; }
+      else if (c !== "\r") field += c;
+    }
+    if (field || row.length) { row.push(field); rows.push(row); }
+    return rows;
+  }
+
+  function cell(row, i) { return row.length > i ? row[i].trim() : ""; }
+
+  function trimChars(s) {
+    var a = 0, b = s.length;
+    while (a < b && EDGE.indexOf(s[a]) >= 0) a++;
+    while (b > a && EDGE.indexOf(s[b - 1]) >= 0) b--;
+    return s.slice(a, b);
+  }
+
+  function findUkrainian(row) {
+    var b = cell(row, 1);
+    if (CYRILLIC.test(b)) return b;
+    var order = [0, 2, 3, 4];
+    for (var k = 0; k < order.length; k++) {
+      var v = cell(row, order[k]);
+      if (CYRILLIC.test(v)) return v;
+    }
+    return "";
+  }
+
+  function stripGluedEnglish(uk) {
+    var m = uk.search(LATIN);
+    if (m < 0) return uk;
+    var head = uk.slice(0, m), tail = uk.slice(m);
+    if (CYRILLIC.test(tail) || !CYRILLIC.test(head)) return uk;
+    if (trimChars(head).length < 2) return uk;
+    return trimChars(head);
+  }
+
+  function normalise(uk) {
+    var s = uk.toLowerCase().replace(/ʼ/g, "'").replace(/’/g, "'");
+    s = s.replace(/[^Ѐ-ӿ' ]+/g, "");
+    return s.replace(/\s+/g, " ").trim();
+  }
+
+  function tidyEnglish(en) {
+    var parts = en.split(/\s+/).filter(Boolean);
+    if (parts.length === 2 && parts[0].toLowerCase().indexOf(parts[1].toLowerCase().slice(0, 4)) === 0) return parts[0];
+    return en;
+  }
+
+  function cleanRows(rows) {
+    var kept = {}, order = [];
+    rows.forEach(function (row, n) {
+      if (!row.some(function (c) { return c.trim(); })) return;
+      var uk = findUkrainian(row);
+      var en = cell(row, 2);
+      if (!uk || !en) return;
+      if (ERRORS.some(function (e) { return en.indexOf(e) >= 0 || uk.indexOf(e) >= 0; })) return;
+      if (uk.toLowerCase() === "ukrainian" && en.toLowerCase() === "english") return;
+      uk = stripGluedEnglish(uk);
+      en = tidyEnglish(en);
+      var key = normalise(uk);
+      if (!key) return;
+      if (kept[key]) {
+        if (en.length < kept[key].en.length) kept[key].en = en;
+      } else {
+        kept[key] = { row: n + 1, uk: uk, en: en };
+        order.push(key);
+      }
+    });
+    return order.map(function (k) { return kept[k]; });
+  }
+
+  function hex(buf) {
+    return Array.prototype.map.call(new Uint8Array(buf), function (b) {
+      return ("0" + b.toString(16)).slice(-2);
+    }).join("");
+  }
+
+  function withIds(list) {
+    return Promise.all(list.map(function (w) {
+      var data = new TextEncoder().encode(w.uk + "|" + w.en);
+      return crypto.subtle.digest("SHA-1", data).then(function (h) {
+        return { id: hex(h).slice(0, 10), uk: w.uk, en: w.en, row: w.row };
+      });
+    }));
+  }
+  // ---------- CORE END ----------
+
   // ---------- boot ----------
 
-  fetch("words.json", { cache: "no-cache" })
-    .then(function (r) {
-      if (!r.ok) throw new Error("words.json returned " + r.status);
-      return r.json();
+  function loadFromSheet() {
+    return fetch(SHEET_CSV + "&t=" + Date.now(), { cache: "no-store" })
+      .then(function (r) {
+        if (!r.ok) throw new Error("sheet returned " + r.status);
+        return r.text();
+      })
+      .then(function (text) {
+        if (/^\s*</.test(text)) throw new Error("sheet is not published as CSV");
+        return withIds(cleanRows(parseCSV(text)));
+      })
+      .then(function (list) {
+        if (list.length < CHOICES) throw new Error("sheet came back with too few words");
+        saveJSON(SHEET_CACHE_KEY, list);
+        return list;
+      });
+  }
+
+  function loadFallback() {
+    var cached = loadJSON(SHEET_CACHE_KEY, null);
+    if (cached && cached.length >= CHOICES) return Promise.resolve(cached);
+    return fetch("words.json", { cache: "no-cache" })
+      .then(function (r) {
+        if (!r.ok) throw new Error("words.json returned " + r.status);
+        return r.json();
+      })
+      .then(function (data) { return data.words || []; });
+  }
+
+  // Anything on the sheet today that was not there on the last visit counts
+  // as just added, and leads the next new-word session.
+  function noteNewArrivals() {
+    var before = loadJSON(LIST_KEY, null);
+    addedSinceLastVisit = {};
+    if (before) {
+      var had = {};
+      before.forEach(function (id) { had[id] = true; });
+      words.forEach(function (w) { if (!had[w.id] && !progress[w.id]) addedSinceLastVisit[w.id] = true; });
+    }
+    saveJSON(LIST_KEY, words.map(function (w) { return w.id; }));
+  }
+
+  loadFromSheet()
+    .catch(function (err) {
+      if (location.protocol === "file:") throw new Error("Open the app from its GitHub Pages address, not from a file on your computer.");
+      return loadFallback();
     })
-    .then(function (data) {
-      words = (data.words || []).filter(function (w) { return w.uk && w.en; });
+    .then(function (list) {
+      words = list.filter(function (w) { return w.uk && w.en; });
       if (words.length < CHOICES) {
         renderEmpty("You need at least " + CHOICES + " words in the sheet before multiple choice works.");
         return;
       }
-      start();
+      noteNewArrivals();
+      start("new");
     })
     .catch(function (err) {
       renderEmpty("Could not load the word list. " + err.message);
