@@ -417,8 +417,9 @@
   // verbs, and where possible the Ukrainian looks alike too (same start,
   // same ending), so a half-remembered word is a real trap.
 
-  // How often the question flips: English shown, pick the Ukrainian.
-  var REVERSE_SHARE = 0.35;
+  // Direction: the first half of every session shows the English and asks for
+  // the Ukrainian; the second half shows the Ukrainian and asks for the English.
+  var ENGLISH_FIRST_SHARE = 0.5;
 
   function plainEn(s) { return s.toLowerCase().replace(/[.!?,]+$/g, "").replace(/\s+/g, " ").trim(); }
 
@@ -737,7 +738,8 @@
     session = mode === "review" ? buildReviewSession() : buildNewSession();
     index = 0;
     results = [];
-    flipped = session.map(function () { return Math.random() < REVERSE_SHARE; });
+    var englishFirst = Math.ceil(session.length * ENGLISH_FIRST_SHARE);
+    flipped = session.map(function (w, i) { return i < englishFirst; });
     if (!session.length) {
       renderEmpty("Nothing to study. Add some words to the sheet.");
       return;
