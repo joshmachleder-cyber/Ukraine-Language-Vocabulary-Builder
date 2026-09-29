@@ -1,0 +1,1224 @@
+{
+ "examples": {
+  "амброзіі": {
+   "uk": "У серпні пилок [амброзії] викликає алергію в багатьох людей.",
+   "en": "In August, ragweed pollen causes allergies in many people."
+  },
+  "андріівський узвіз": {
+   "uk": "У неділю ми гуляли [Андріївським узвозом] і дивилися на картини.",
+   "en": "On Sunday we walked along Andriivskyi Descent and looked at the paintings."
+  },
+  "бажаний": {
+   "uk": "Досвід роботи [бажаний], але не обов'язковий.",
+   "en": "Work experience is desired, but not required."
+  },
+  "безкоштовно": {
+   "uk": "У понеділок до музею можна зайти [безкоштовно].",
+   "en": "On Monday you can get into the museum for free."
+  },
+  "божевільні": {
+   "uk": "Ціни на житло в Києві просто [божевільні].",
+   "en": "Housing prices in Kyiv are just crazy."
+  },
+  "бруд": {
+   "uk": "Після дощу на стежці був суцільний [бруд].",
+   "en": "After the rain the path was nothing but dirt."
+  },
+  "брудний": {
+   "uk": "Мій собака знову прийшов додому [брудний].",
+   "en": "My dog came home dirty again."
+  },
+  "брудні": {
+   "uk": "Не клади [брудні] шкарпетки на ліжко!",
+   "en": "Don't put dirty socks on the bed!"
+  },
+  "будній день": {
+   "uk": "У [будній день] я встаю о сьомій.",
+   "en": "On a weekday I get up at seven."
+  },
+  "будувати": {
+   "uk": "Місто планує [будувати] новий міст через річку.",
+   "en": "The city plans to build a new bridge over the river."
+  },
+  "бути успішним": {
+   "uk": "Щоб [бути успішним], треба багато працювати.",
+   "en": "To be successful, you have to work a lot."
+  },
+  "біль ум'язах": {
+   "uk": "Після тренування в мене [біль у м'язах].",
+   "en": "After the workout I have pain in my muscles."
+  },
+  "варто": {
+   "uk": "Цей фільм [варто] подивитися.",
+   "en": "This film is worth watching."
+  },
+  "ваша думка": {
+   "uk": "Яка [ваша думка] щодо цього плану?",
+   "en": "What is your opinion of this plan?"
+  },
+  "ввечері": {
+   "uk": "[Ввечері] я читаю книжку перед сном.",
+   "en": "In the evening I read a book before bed."
+  },
+  "велетень": {
+   "uk": "Поруч із малим братом він здавався [велетнем].",
+   "en": "Next to his little brother he seemed like a giant."
+  },
+  "веселощі": {
+   "uk": "На весіллі було багато музики й [веселощів].",
+   "en": "At the wedding there was a lot of music and merriment."
+  },
+  "взагалі": {
+   "uk": "[Взагалі] я люблю зиму, але не таку холодну.",
+   "en": "In general I like winter, but not one this cold."
+  },
+  "використовувати": {
+   "uk": "Цей додаток можна [використовувати] безкоштовно.",
+   "en": "You can use this app for free."
+  },
+  "випадково": {
+   "uk": "Я [випадково] зустрів старого друга на вокзалі.",
+   "en": "I accidentally ran into an old friend at the train station."
+  },
+  "вирішувати": {
+   "uk": "Ми повинні [вирішувати] проблеми разом.",
+   "en": "We should solve problems together."
+  },
+  "висота": {
+   "uk": "[Висота] цієї вежі понад сто метрів.",
+   "en": "The height of this tower is over a hundred meters."
+  },
+  "вистачає": {
+   "uk": "Мені не [вистачає] часу на спорт.",
+   "en": "I don't have enough time for sports."
+  },
+  "витрачаємо": {
+   "uk": "Ми [витрачаємо] забагато грошей на каву.",
+   "en": "We spend too much money on coffee."
+  },
+  "виходь за мене": {
+   "uk": "Він став на коліно й сказав: «[Виходь за мене]!»",
+   "en": "He got down on one knee and said: \"Marry me!\""
+  },
+  "вихідний день": {
+   "uk": "Неділя в мене [вихідний день].",
+   "en": "Sunday is my day off."
+  },
+  "влаштуватися на роботу": {
+   "uk": "Після університету вона хоче [влаштуватися на роботу] в банк.",
+   "en": "After university she wants to get a job at a bank."
+  },
+  "внески": {
+   "uk": "Члени спілки сплачують щомісячні [внески].",
+   "en": "Union members pay monthly contributions."
+  },
+  "водорості": {
+   "uk": "На березі моря лежало багато [водоростей].",
+   "en": "There was a lot of algae lying on the seashore."
+  },
+  "водійське посвідчення": {
+   "uk": "Я забув удома [водійське посвідчення].",
+   "en": "I left my driver's license at home."
+  },
+  "востаннє": {
+   "uk": "[Востаннє] я був у Львові три роки тому.",
+   "en": "The last time I was in Lviv was three years ago."
+  },
+  "впевненність": {
+   "uk": "Їй бракує [впевненості], коли вона говорить англійською.",
+   "en": "She lacks confidence when she speaks English."
+  },
+  "впевненість": {
+   "uk": "Досвід дає [впевненість] у собі.",
+   "en": "Experience gives you self-confidence."
+  },
+  "впертий як осел": {
+   "uk": "Мій брат [впертий як осел]: ніколи не визнає, що помиляється.",
+   "en": "My brother is stubborn as a donkey: he never admits he's wrong."
+  },
+  "впливати": {
+   "uk": "Погода може [впливати] на настрій.",
+   "en": "Weather can influence your mood."
+  },
+  "впо": {
+   "uk": "У місті відкрили центр допомоги для [ВПО].",
+   "en": "The city opened an aid center for IDPs."
+  },
+  "все буде добре для кожного з нас": {
+   "uk": "Мама обійняла нас і сказала: «[Все буде добре для кожного з нас]».",
+   "en": "Mom hugged us and said: \"Everything will be fine for each of us.\""
+  },
+  "всіоднолітки": {
+   "uk": "У нашому класі [всі однолітки], тільки один хлопець старший.",
+   "en": "In our class we're all peers; only one boy is older."
+  },
+  "втомлююся": {
+   "uk": "Я швидко [втомлююся], коли мало сплю.",
+   "en": "I get tired quickly when I don't sleep much."
+  },
+  "вузька": {
+   "uk": "Вулиця така [вузька], що дві машини не можуть роз'їхатися.",
+   "en": "The street is so narrow that two cars can't pass each other."
+  },
+  "вулканічні острови": {
+   "uk": "Цього літа ми полетимо на [вулканічні острови] в Атлантиці.",
+   "en": "This summer we'll fly to some volcanic islands in the Atlantic."
+  },
+  "відбувається": {
+   "uk": "Що тут [відбувається]?",
+   "en": "What is happening here?"
+  },
+  "відволікати": {
+   "uk": "Не треба мене [відволікати], я працюю.",
+   "en": "Please don't distract me, I'm working."
+  },
+  "відгук": {
+   "uk": "Я залишив хороший [відгук] про цей ресторан.",
+   "en": "I left a good review of this restaurant."
+  },
+  "віддалено": {
+   "uk": "Вона працює [віддалено] з дому.",
+   "en": "She works remotely from home."
+  },
+  "відповідальний": {
+   "uk": "Хто [відповідальний] за цей проєкт?",
+   "en": "Who is responsible for this project?"
+  },
+  "відпустка": {
+   "uk": "У серпні в мене [відпустка].",
+   "en": "I'm on leave in August."
+  },
+  "вік": {
+   "uk": "У моєму [віці] вже важко бігати марафони.",
+   "en": "At my age it's already hard to run marathons."
+  },
+  "гаразд": {
+   "uk": "[Гаразд], зустрінемося о шостій.",
+   "en": "OK, let's meet at six."
+  },
+  "гарбуз": {
+   "uk": "На Гелловін ми вирізали обличчя на [гарбузі].",
+   "en": "For Halloween we carved a face into a pumpkin."
+  },
+  "гарний кінцевий результат": {
+   "uk": "Ми довго працювали, але отримали [гарний кінцевий результат].",
+   "en": "We worked a long time, but we got a good end result."
+  },
+  "головний біль": {
+   "uk": "Від шуму в мене [головний біль].",
+   "en": "The noise gives me a headache."
+  },
+  "гумор": {
+   "uk": "Мені подобається британський [гумор].",
+   "en": "I like British humor."
+  },
+  "гуртожитки": {
+   "uk": "Студенти живуть у [гуртожитках] біля університету.",
+   "en": "Students live in dormitories near the university."
+  },
+  "гуртожиток": {
+   "uk": "Коли я вчився, я жив у [гуртожитку].",
+   "en": "When I was a student, I lived in a dormitory."
+  },
+  "гучно": {
+   "uk": "Сусіди [гучно] слухають музику вночі.",
+   "en": "The neighbors play music loudly at night."
+  },
+  "дах": {
+   "uk": "Після бурі [дах] почав протікати.",
+   "en": "After the storm the roof began to leak."
+  },
+  "дводенний": {
+   "uk": "Ми поїхали на [дводенний] тур у Карпати.",
+   "en": "We went on a two-day tour in the Carpathians."
+  },
+  "до речі": {
+   "uk": "[До речі], ти бачив новий фільм?",
+   "en": "By the way, have you seen the new film?"
+  },
+  "доба": {
+   "uk": "Це була [доба] великих відкриттів.",
+   "en": "It was an era of great discoveries."
+  },
+  "довжина": {
+   "uk": "[Довжина] мосту півтора кілометра.",
+   "en": "The length of the bridge is a kilometer and a half."
+  },
+  "договір про корисні копалини": {
+   "uk": "Уряди довго обговорювали [договір про корисні копалини].",
+   "en": "The governments discussed the mineral agreement for a long time."
+  },
+  "додати спеції": {
+   "uk": "Не забудь [додати спеції] в суп.",
+   "en": "Don't forget to add spices to the soup."
+  },
+  "додаток": {
+   "uk": "Як [додаток] до основної страви подають салат.",
+   "en": "A salad is served as an addition to the main course."
+  },
+  "дозволено": {
+   "uk": "Тут курити не [дозволено].",
+   "en": "Smoking is not allowed here."
+  },
+  "дозволяв нам": {
+   "uk": "Батько [дозволяв нам] гратися на вулиці до темряви.",
+   "en": "Father allowed us to play outside until dark."
+  },
+  "дозволяти": {
+   "uk": "Батьки не хотіли [дозволяти] мені їхати самому.",
+   "en": "My parents didn't want to allow me to go alone."
+  },
+  "долоня": {
+   "uk": "Дитина поклала камінчик мені на [долоню].",
+   "en": "The child put a pebble on my palm."
+  },
+  "доля": {
+   "uk": "Така вже в нього [доля].",
+   "en": "That's just his fate."
+  },
+  "домовленність": {
+   "uk": "Ми дійшли [домовленості] про ціну.",
+   "en": "We reached an agreement on the price."
+  },
+  "дорослі": {
+   "uk": "[Дорослі] платять за квиток, а діти ні.",
+   "en": "Adults pay for a ticket, but children don't."
+  },
+  "досвід": {
+   "uk": "У неї великий [досвід] роботи з дітьми.",
+   "en": "She has a lot of experience working with children."
+  },
+  "досвідчений": {
+   "uk": "Нам потрібен [досвідчений] водій.",
+   "en": "We need an experienced driver."
+  },
+  "досягти": {
+   "uk": "Вона хоче [досягти] успіху в музиці.",
+   "en": "She wants to achieve success in music."
+  },
+  "дотримуватися": {
+   "uk": "Треба [дотримуватися] правил дорожнього руху.",
+   "en": "You have to adhere to the traffic rules."
+  },
+  "другої години": {
+   "uk": "Магазин зачинений до [другої години].",
+   "en": "The store is closed until two o'clock."
+  },
+  "дякую за пораду": {
+   "uk": "[Дякую за пораду], я так і зроблю.",
+   "en": "Thank you for the advice, I'll do just that."
+  },
+  "дізнаємося": {
+   "uk": "Завтра ми [дізнаємося] результати іспиту.",
+   "en": "Tomorrow we will find out the exam results."
+  },
+  "жарт": {
+   "uk": "Це був просто [жарт], не ображайся.",
+   "en": "It was just a joke, don't be offended."
+  },
+  "жартувати": {
+   "uk": "Мій дідусь любить [жартувати] за столом.",
+   "en": "My grandfather likes to joke at the table."
+  },
+  "житло": {
+   "uk": "У великому місті важко знайти дешеве [житло].",
+   "en": "In a big city it's hard to find a cheap dwelling."
+  },
+  "журавлина": {
+   "uk": "Бабуся зробила морс із [журавлини].",
+   "en": "Grandma made a drink from cranberries."
+  },
+  "з мене цього досить": {
+   "uk": "Він грюкнув дверима і сказав: «[З мене цього досить]».",
+   "en": "He slammed the door and said: \"I've had enough of this.\""
+  },
+  "з одного боку": {
+   "uk": "[З одного боку], це дорого, але якість хороша.",
+   "en": "On the one hand, it's expensive, but the quality is good."
+  },
+  "з одного боку в інший": {
+   "uk": "Човен гойдався [з одного боку в інший].",
+   "en": "The boat rocked from one side to the other."
+  },
+  "з особливості": {
+   "uk": "Це стара хата [з особливостями]: двері відчиняються тільки зсередини.",
+   "en": "This is an old house with its own features: the door only opens from inside."
+  },
+  "з іншого боку": {
+   "uk": "Робота цікава, але, [з іншого боку], платять мало.",
+   "en": "The job is interesting, but, on the other hand, the pay is low."
+  },
+  "забороняти": {
+   "uk": "Ніхто не може [забороняти] тобі мріяти.",
+   "en": "No one can prohibit you from dreaming."
+  },
+  "заздалегідь": {
+   "uk": "Квитки краще купити [заздалегідь].",
+   "en": "It's better to buy tickets in advance."
+  },
+  "заздрю": {
+   "uk": "Ти їдеш на море? Я тобі [заздрю]!",
+   "en": "You're going to the sea? I envy you!"
+  },
+  "залишити": {
+   "uk": "Можеш [залишити] цю книжку собі.",
+   "en": "You can keep this book."
+  },
+  "залишки": {
+   "uk": "З [залишків] курки я зварю суп.",
+   "en": "I'll make soup from the chicken remains."
+  },
+  "заморений": {
+   "uk": "Після зміни він прийшов додому зовсім [заморений].",
+   "en": "After his shift he came home completely worn out."
+  },
+  "заморені": {
+   "uk": "Діти були [заморені] після довгої дороги.",
+   "en": "The kids were worn out after the long trip."
+  },
+  "заплющити очі": {
+   "uk": "Спробуй [заплющити очі] і розслабитися.",
+   "en": "Try to close your eyes and relax."
+  },
+  "запізнився": {
+   "uk": "Вибач, я [запізнився] на автобус.",
+   "en": "Sorry, I was late for the bus."
+  },
+  "зарплатня": {
+   "uk": "[Зарплатню] виплачують двічі на місяць.",
+   "en": "The salary is paid twice a month."
+  },
+  "застудився": {
+   "uk": "Я [застудився] і залишився вдома.",
+   "en": "I caught a cold and stayed home."
+  },
+  "захист": {
+   "uk": "Цей крем дає [захист] від сонця.",
+   "en": "This cream gives protection from the sun."
+  },
+  "захоплюючий сюжет": {
+   "uk": "У цієї книжки [захоплюючий сюжет].",
+   "en": "This book has an exciting plot."
+  },
+  "заґалі": {
+   "uk": "[Взагалі], мені тут подобається.",
+   "en": "In general, I like it here."
+  },
+  "збройні сили україни": {
+   "uk": "Мій двоюрідний брат служить у [Збройних силах України].",
+   "en": "My cousin serves in the Armed Forces of Ukraine."
+  },
+  "зброя": {
+   "uk": "Партнери надіслали Україні нову [зброю].",
+   "en": "Partners sent Ukraine new weapons."
+  },
+  "звертався до лікаря": {
+   "uk": "Ти [звертався до лікаря] з цим болем?",
+   "en": "Did you go to the doctor about this pain?"
+  },
+  "звільнення": {
+   "uk": "Усі чекали на [звільнення] полонених.",
+   "en": "Everyone was waiting for the release of the prisoners."
+  },
+  "звільнили": {
+   "uk": "Минулого тижня [звільнили] ще сто полонених.",
+   "en": "Last week another hundred prisoners were released."
+  },
+  "змінюється": {
+   "uk": "Погода в горах швидко [змінюється].",
+   "en": "The weather in the mountains changes quickly."
+  },
+  "змішаний": {
+   "uk": "Це [змішаний] ліс: тут ростуть і дуби, і сосни.",
+   "en": "This is a mixed forest: both oaks and pines grow here."
+  },
+  "знайомі": {
+   "uk": "На вечірці було багато моїх [знайомих].",
+   "en": "There were many of my acquaintances at the party."
+  },
+  "зсу": {
+   "uk": "[ЗСУ] звільнили ще одне село.",
+   "en": "The Armed Forces of Ukraine liberated another village."
+  },
+  "ймовірно": {
+   "uk": "Завтра, [ймовірно], буде дощ.",
+   "en": "Tomorrow it will probably rain."
+  },
+  "кав'ярня": {
+   "uk": "Біля мого дому відкрилася нова [кав'ярня].",
+   "en": "A new cafe opened near my house."
+  },
+  "кажуть шо": {
+   "uk": "[Кажуть, що] ця зима буде холодною.",
+   "en": "They say that this winter will be cold."
+  },
+  "комунальні послуги": {
+   "uk": "Взимку ми платимо більше за [комунальні послуги].",
+   "en": "In winter we pay more for utilities."
+  },
+  "користуються": {
+   "uk": "Багато людей [користуються] цим додатком.",
+   "en": "Many people use this app."
+  },
+  "котра година": {
+   "uk": "Вибачте, [котра година]?",
+   "en": "Excuse me, what time is it?"
+  },
+  "краватка": {
+   "uk": "На співбесіду він одягнув [краватку].",
+   "en": "He wore a tie to the interview."
+  },
+  "криза": {
+   "uk": "Економічна [криза] вдарила по малому бізнесу.",
+   "en": "The economic crisis hit small businesses."
+  },
+  "крок": {
+   "uk": "Це перший [крок] до успіху.",
+   "en": "This is the first step toward success."
+  },
+  "крім": {
+   "uk": "Прийшли всі, [крім] Олега.",
+   "en": "Everyone came except Oleh."
+  },
+  "кумедні": {
+   "uk": "Діти розповідали [кумедні] історії.",
+   "en": "The kids were telling funny stories."
+  },
+  "куштувати": {
+   "uk": "Я люблю [куштувати] нові страви в подорожах.",
+   "en": "I love to taste new dishes when I travel."
+  },
+  "кімнатні рослини": {
+   "uk": "Я поливаю [кімнатні рослини] щосуботи.",
+   "en": "I water the houseplants every Saturday."
+  },
+  "легше ніж": {
+   "uk": "Говорити українською [легше, ніж] я думав.",
+   "en": "Speaking Ukrainian is easier than I thought."
+  },
+  "ледве": {
+   "uk": "Я [ледве] встиг на потяг.",
+   "en": "I barely made the train."
+  },
+  "личить": {
+   "uk": "Тобі дуже [личить] ця сукня.",
+   "en": "This dress really suits you."
+  },
+  "лягати спати": {
+   "uk": "Я намагаюся [лягати спати] до одинадцятої.",
+   "en": "I try to go to bed before eleven."
+  },
+  "лякати": {
+   "uk": "Не треба [лякати] дітей такими історіями.",
+   "en": "Don't scare the kids with stories like that."
+  },
+  "літні": {
+   "uk": "[Літні] канікули пролетіли дуже швидко.",
+   "en": "The summer holidays flew by very fast."
+  },
+  "ліхтарики": {
+   "uk": "Коли вимкнули світло, ми взяли [ліхтарики].",
+   "en": "When the power went out, we grabbed flashlights."
+  },
+  "м'язи": {
+   "uk": "Після спортзалу в мене болять [м'язи].",
+   "en": "After the gym my muscles hurt."
+  },
+  "майбутній час": {
+   "uk": "Сьогодні на уроці ми вчимо [майбутній час].",
+   "en": "Today in class we're learning the future tense."
+  },
+  "мандрувати": {
+   "uk": "Я люблю [мандрувати] Україною.",
+   "en": "I love to travel around Ukraine."
+  },
+  "мене вивести з рівноваги": {
+   "uk": "Такі дрібниці можуть [мене вивести з рівноваги].",
+   "en": "Little things like that can throw me off balance."
+  },
+  "мені пощастило": {
+   "uk": "[Мені пощастило] знайти квартиру біля роботи.",
+   "en": "I was lucky to find an apartment near work."
+  },
+  "мер": {
+   "uk": "[Мер] міста відкрив новий парк.",
+   "en": "The city's mayor opened a new park."
+  },
+  "минулого року": {
+   "uk": "[Минулого року] я вперше поїхав до Одеси.",
+   "en": "Last year I went to Odesa for the first time."
+  },
+  "мистецтво": {
+   "uk": "Сучасне [мистецтво] не завжди легко зрозуміти.",
+   "en": "Contemporary art isn't always easy to understand."
+  },
+  "миттєва": {
+   "uk": "Реакція була [миттєва].",
+   "en": "The reaction was instantaneous."
+  },
+  "моя хата зкраю": {
+   "uk": "Він завжди каже «[моя хата скраю]», коли в когось проблеми.",
+   "en": "He always says \"my house is on the edge\" (it's none of my business) when someone has problems."
+  },
+  "моє ставлення": {
+   "uk": "[Моє ставлення] до цієї ідеї змінилося.",
+   "en": "My attitude toward this idea has changed."
+  },
+  "міграційна": {
+   "uk": "Державна [міграційна] служба видає паспорти.",
+   "en": "The State Migration Service issues passports."
+  },
+  "міцні напої": {
+   "uk": "Я не п'ю [міцні напої], тільки вино.",
+   "en": "I don't drink strong drinks, only wine."
+  },
+  "на алясці": {
+   "uk": "[На Алясці] взимку дуже холодно.",
+   "en": "In Alaska it's very cold in winter."
+  },
+  "на острові": {
+   "uk": "Ми відпочивали тиждень [на острові].",
+   "en": "We vacationed on the island for a week."
+  },
+  "набирати зайву вагу": {
+   "uk": "Взимку легко [набирати зайву вагу].",
+   "en": "In winter it's easy to gain weight."
+  },
+  "навколо": {
+   "uk": "[Навколо] будинку росте сад.",
+   "en": "A garden grows around the house."
+  },
+  "навіть": {
+   "uk": "Він [навіть] не привітався.",
+   "en": "He didn't even say hello."
+  },
+  "над собою": {
+   "uk": "Треба постійно працювати [над собою].",
+   "en": "You need to keep working on yourself."
+  },
+  "надавати перевагу": {
+   "uk": "Я [надаю перевагу] чаю, а не каві.",
+   "en": "I give preference to tea over coffee."
+  },
+  "назва": {
+   "uk": "Яка [назва] цієї вулиці?",
+   "en": "What is the name of this street?"
+  },
+  "найгірший досвід": {
+   "uk": "Це був мій [найгірший досвід] у ресторані.",
+   "en": "It was my worst experience at a restaurant."
+  },
+  "налагодиться": {
+   "uk": "Не хвилюйся, все [налагодиться].",
+   "en": "Don't worry, everything will get better."
+  },
+  "налаштовані": {
+   "uk": "Усі були [налаштовані] на перемогу.",
+   "en": "Everyone was set on victory."
+  },
+  "напої": {
+   "uk": "[Напої] в ціну не входять.",
+   "en": "Drinks are not included in the price."
+  },
+  "натирати на тертці": {
+   "uk": "Сир треба [натирати на тертці].",
+   "en": "You need to grate the cheese."
+  },
+  "наче з розуму зійшли": {
+   "uk": "Перед святами люди в магазині [наче з розуму зійшли].",
+   "en": "Before the holidays people in the store acted as if they had gone mad."
+  },
+  "начебто": {
+   "uk": "Він [начебто] переїхав до Львова.",
+   "en": "Apparently he moved to Lviv."
+  },
+  "не встигати": {
+   "uk": "Я постійно [не встигаю] все зробити.",
+   "en": "I never have time to get everything done."
+  },
+  "не пожалкувала": {
+   "uk": "Вона [не пожалкувала], що поїхала туди.",
+   "en": "She did not regret going there."
+  },
+  "недолік": {
+   "uk": "Єдиний [недолік] цієї квартири: немає ліфта.",
+   "en": "The only drawback of this apartment: there's no elevator."
+  },
+  "нежить": {
+   "uk": "У мене [нежить] і болить горло.",
+   "en": "I have a cold (runny nose) and a sore throat."
+  },
+  "нервувався": {
+   "uk": "Перед співбесідою я дуже [нервувався].",
+   "en": "I was very nervous before the interview."
+  },
+  "нідй": {
+   "uk": "[Ніхто] не знав відповіді.",
+   "en": "Nobody knew the answer."
+  },
+  "ніж": {
+   "uk": "Мій брат вищий, [ніж] я.",
+   "en": "My brother is taller than me."
+  },
+  "о десятій вечора": {
+   "uk": "Магазин зачиняється [о десятій вечора].",
+   "en": "The store closes at ten o'clock in the evening."
+  },
+  "о шостій годині вечора": {
+   "uk": "Зустрінемося [о шостій годині вечора] біля театру.",
+   "en": "Let's meet at six o'clock in the evening by the theater."
+  },
+  "об'єднання": {
+   "uk": "Кілька організацій створили [об'єднання].",
+   "en": "Several organizations formed an association."
+  },
+  "обговорюємо": {
+   "uk": "Зараз ми [обговорюємо] план на наступний рік.",
+   "en": "Right now we're discussing the plan for next year."
+  },
+  "облаштований": {
+   "uk": "Двір добре [облаштований] для дітей.",
+   "en": "The yard is well equipped for children."
+  },
+  "облаштовувати": {
+   "uk": "Ми почали [облаштовувати] нову квартиру.",
+   "en": "We started to equip the new apartment."
+  },
+  "обмежую": {
+   "uk": "Я [обмежую] час у телефоні.",
+   "en": "I restrict my time on the phone."
+  },
+  "обрали": {
+   "uk": "Мешканці [обрали] нового мера.",
+   "en": "The residents elected a new mayor."
+  },
+  "обралі": {
+   "uk": "Її [обрали] головою спілки.",
+   "en": "They elected her head of the union."
+  },
+  "оголошення": {
+   "uk": "Я побачив [оголошення] про оренду квартири.",
+   "en": "I saw an announcement for an apartment rental."
+  },
+  "один одного": {
+   "uk": "Ми знаємо [один одного] з дитинства.",
+   "en": "We have known each other since childhood."
+  },
+  "однолітки": {
+   "uk": "Він грає у футбол зі своїми [однолітками].",
+   "en": "He plays football with his peers."
+  },
+  "одноліток": {
+   "uk": "Ігор мій [одноліток]: ми народилися в один рік.",
+   "en": "Ihor is my coeval: we were born in the same year."
+  },
+  "одужуй": {
+   "uk": "Шкода, що ти захворів. [Одужуй] швидше!",
+   "en": "Sorry you got sick. Get well soon!"
+  },
+  "одягатися": {
+   "uk": "Взимку треба тепло [одягатися].",
+   "en": "In winter you need to dress warmly."
+  },
+  "ожеледиця": {
+   "uk": "Сьогодні на дорогах [ожеледиця], будь обережний.",
+   "en": "There's ice on the roads today, be careful."
+  },
+  "окремий": {
+   "uk": "У нас [окремий] вхід до квартири.",
+   "en": "We have a separate entrance to the apartment."
+  },
+  "окрім": {
+   "uk": "[Окрім] англійської, він знає польську.",
+   "en": "Except for English, he also knows Polish."
+  },
+  "опалення": {
+   "uk": "У будинку ще не ввімкнули [опалення].",
+   "en": "They haven't turned on the heating in the building yet."
+  },
+  "останній раз": {
+   "uk": "Коли ти [останній раз] був у лікаря?",
+   "en": "When was the last time you saw a doctor?"
+  },
+  "острів": {
+   "uk": "Хортиця є найбільшим [островом] на Дніпрі.",
+   "en": "Khortytsia is the largest island on the Dnipro."
+  },
+  "парасолька": {
+   "uk": "Візьми [парасольку], обіцяють дощ.",
+   "en": "Take an umbrella, they're forecasting rain."
+  },
+  "пекти": {
+   "uk": "Бабуся любить [пекти] пироги на свята.",
+   "en": "Grandma loves to bake pies for the holidays."
+  },
+  "перевага": {
+   "uk": "Велика [перевага] цієї роботи: гнучкий графік.",
+   "en": "A big advantage of this job: flexible hours."
+  },
+  "переваги і недоліки": {
+   "uk": "Давай обговоримо [переваги і недоліки] цього рішення.",
+   "en": "Let's discuss the advantages and disadvantages of this decision."
+  },
+  "переконанання": {
+   "uk": "Це моє глибоке [переконання].",
+   "en": "This is my deep conviction."
+  },
+  "перемовини": {
+   "uk": "[Перемовини] тривали всю ніч.",
+   "en": "The negotiations lasted all night."
+  },
+  "першого квітня": {
+   "uk": "[Першого квітня] всі жартують одне з одного.",
+   "en": "On April first everyone plays jokes on each other."
+  },
+  "пиріг": {
+   "uk": "Я спекла яблучний [пиріг].",
+   "en": "I baked an apple pie."
+  },
+  "плескати в долоні": {
+   "uk": "Діти почали [плескати в долоні] під музику.",
+   "en": "The kids started to clap their hands to the music."
+  },
+  "плічопліч": {
+   "uk": "Ми стояли [пліч-о-пліч] на площі.",
+   "en": "We stood side by side on the square."
+  },
+  "поверхи": {
+   "uk": "Верхні [поверхи] будинку ще не добудували.",
+   "en": "The upper floors of the building aren't finished yet."
+  },
+  "погоджуватися": {
+   "uk": "Не треба завжди з усіма [погоджуватися].",
+   "en": "You don't have to always agree with everyone."
+  },
+  "погоджується": {
+   "uk": "Вона рідко [погоджується] зі мною.",
+   "en": "She rarely agrees with me."
+  },
+  "погодився": {
+   "uk": "Він одразу [погодився] допомогти.",
+   "en": "He agreed to help right away."
+  },
+  "подвір'я": {
+   "uk": "Діти граються на [подвір'ї].",
+   "en": "The kids are playing in the yard."
+  },
+  "подорожувати": {
+   "uk": "На пенсії вони планують [подорожувати].",
+   "en": "In retirement they plan to travel."
+  },
+  "покращити": {
+   "uk": "Я хочу [покращити] свою вимову.",
+   "en": "I want to improve my pronunciation."
+  },
+  "помаранчевий": {
+   "uk": "Мені подобається цей [помаранчевий] светр.",
+   "en": "I like this orange sweater."
+  },
+  "помилятися": {
+   "uk": "Усі люди можуть [помилятися].",
+   "en": "All people can be wrong."
+  },
+  "помста": {
+   "uk": "[Помста] не принесе тобі спокою.",
+   "en": "Revenge won't bring you peace."
+  },
+  "помститися": {
+   "uk": "Він хотів [помститися] кривдникам.",
+   "en": "He wanted to take revenge on the people who wronged him."
+  },
+  "поперше": {
+   "uk": "[По-перше], це дорого, по-друге, це далеко.",
+   "en": "Firstly, it's expensive; secondly, it's far."
+  },
+  "порада": {
+   "uk": "Мені потрібна твоя [порада].",
+   "en": "I need your advice."
+  },
+  "поржня ваза": {
+   "uk": "На столі стояла [порожня ваза].",
+   "en": "An empty vase stood on the table."
+  },
+  "порушення": {
+   "uk": "Це грубе [порушення] правил.",
+   "en": "This is a gross violation of the rules."
+  },
+  "посвідчення водія": {
+   "uk": "Поліцейський попросив показати [посвідчення водія].",
+   "en": "The police officer asked to see my driver's license."
+  },
+  "посмішка": {
+   "uk": "У неї чудова [посмішка].",
+   "en": "She has a wonderful smile."
+  },
+  "потрібно": {
+   "uk": "Мені [потрібно] купити хліб.",
+   "en": "I need to buy bread."
+  },
+  "почуття гумору": {
+   "uk": "У мого тата чудове [почуття гумору].",
+   "en": "My dad has a great sense of humor."
+  },
+  "праця": {
+   "uk": "Ця [праця] забрала в мене три роки.",
+   "en": "This work took me three years."
+  },
+  "пригощав": {
+   "uk": "Сусід [пригощав] нас яблуками зі свого саду.",
+   "en": "The neighbor treated us to apples from his garden."
+  },
+  "приділяти увагу": {
+   "uk": "Батьки мають [приділяти увагу] дітям.",
+   "en": "Parents should pay attention to their children."
+  },
+  "приймати рішення щодо": {
+   "uk": "Нам треба швидко [приймати рішення щодо] бюджету.",
+   "en": "We need to make decisions about the budget quickly."
+  },
+  "приймаєш ліки": {
+   "uk": "Ти ще [приймаєш ліки], які призначив лікар?",
+   "en": "Are you still taking the medication the doctor prescribed?"
+  },
+  "примусити": {
+   "uk": "Ніхто не може [примусити] тебе це зробити.",
+   "en": "No one can force you to do this."
+  },
+  "приносити задоволення": {
+   "uk": "Робота має [приносити задоволення].",
+   "en": "Work should bring pleasure."
+  },
+  "провалилися": {
+   "uk": "Усі наші плани [провалилися].",
+   "en": "All our plans failed."
+  },
+  "прокидатися": {
+   "uk": "Я не люблю [прокидатися] рано.",
+   "en": "I don't like to wake up early."
+  },
+  "проте це мабуть все ж більше стереотип ніж правда": {
+   "uk": "Кажуть, що всі програмісти інтроверти. [Проте це, мабуть, все ж більше стереотип, ніж правда].",
+   "en": "They say all programmers are introverts. However, this is probably more of a stereotype than the truth."
+  },
+  "проти змін": {
+   "uk": "Старші працівники були [проти змін].",
+   "en": "The older employees were against change."
+  },
+  "протягом": {
+   "uk": "[Протягом] усього тижня йшов дощ.",
+   "en": "It rained for the whole week."
+  },
+  "психоаналіз": {
+   "uk": "Фрейд заснував [психоаналіз].",
+   "en": "Freud founded psychoanalysis."
+  },
+  "пів країни": {
+   "uk": "Під час відключень [пів країни] сиділо без світла.",
+   "en": "During the outages half the country sat without power."
+  },
+  "пігулки": {
+   "uk": "Не забудь випити [пігулки] після їжі.",
+   "en": "Don't forget to take the pills after eating."
+  },
+  "під час": {
+   "uk": "[Під час] уроку не можна користуватися телефоном.",
+   "en": "You can't use your phone during class."
+  },
+  "підвіконня": {
+   "uk": "Кіт спить на [підвіконні].",
+   "en": "The cat sleeps on the window sill."
+  },
+  "підтримати": {
+   "uk": "Друзі прийшли, щоб мене [підтримати].",
+   "en": "My friends came to support me."
+  },
+  "підхід до": {
+   "uk": "У неї особливий [підхід до] дітей.",
+   "en": "She has a special approach to children."
+  },
+  "піклуватися": {
+   "uk": "Треба [піклуватися] про своє здоров'я.",
+   "en": "You need to care for your health."
+  },
+  "пішки": {
+   "uk": "Я ходжу на роботу [пішки].",
+   "en": "I go to work on foot."
+  },
+  "релігіозні": {
+   "uk": "Вони дуже [релігійні] люди.",
+   "en": "They are very religious people."
+  },
+  "релігія": {
+   "uk": "Ми говорили про історію і [релігію].",
+   "en": "We talked about history and religion."
+  },
+  "розваги": {
+   "uk": "У маленькому місті мало [розваг].",
+   "en": "There isn't much entertainment in a small town."
+  },
+  "розвантажити": {
+   "uk": "Допоможи мені [розвантажити] машину.",
+   "en": "Help me unload the car."
+  },
+  "роздягатися": {
+   "uk": "Заходь, можеш не [роздягатися], ми зараз вийдемо.",
+   "en": "Come in, no need to undress (take your coat off), we're leaving in a minute."
+  },
+  "розкішні": {
+   "uk": "У неї [розкішні] кучері.",
+   "en": "She has luxurious curls."
+  },
+  "розплющити очі": {
+   "uk": "Вранці важко [розплющити очі].",
+   "en": "In the morning it's hard to open your eyes."
+  },
+  "розумію": {
+   "uk": "Я не [розумію], що ти маєш на увазі.",
+   "en": "I don't understand what you mean."
+  },
+  "рівень": {
+   "uk": "Мій [рівень] української поки що середній.",
+   "en": "My level of Ukrainian is intermediate for now."
+  },
+  "різати кубиками": {
+   "uk": "Картоплю треба [різати кубиками].",
+   "en": "The potatoes need to be diced."
+  },
+  "різдво": {
+   "uk": "На [Різдво] вся родина збирається разом.",
+   "en": "At Christmas the whole family gets together."
+  },
+  "рік тому": {
+   "uk": "Я переїхав сюди [рік тому].",
+   "en": "I moved here a year ago."
+  },
+  "саме цю роботу": {
+   "uk": "Я хочу отримати [саме цю роботу].",
+   "en": "I want to get this very job."
+  },
+  "свято": {
+   "uk": "У нас сьогодні [свято]: донька закінчила школу.",
+   "en": "Today is a holiday for us: our daughter finished school."
+  },
+  "свідок": {
+   "uk": "Він був єдиним [свідком] аварії.",
+   "en": "He was the only witness to the accident."
+  },
+  "серед": {
+   "uk": "[Серед] моїх друзів багато вчителів.",
+   "en": "Among my friends there are many teachers."
+  },
+  "скаржитися": {
+   "uk": "Він любить [скаржитися] на погоду.",
+   "en": "He likes to complain about the weather."
+  },
+  "скласти іспити": {
+   "uk": "Щоб вступити, треба [скласти іспити].",
+   "en": "To get in, you have to pass exams."
+  },
+  "скоротити": {
+   "uk": "Компанія вирішила [скоротити] витрати.",
+   "en": "The company decided to reduce costs."
+  },
+  "скорочення": {
+   "uk": "ЗСУ є [скороченням] від «Збройні сили України».",
+   "en": "ZSU is an abbreviation of \"Armed Forces of Ukraine.\""
+  },
+  "слизько": {
+   "uk": "Обережно, на підлозі [слизько]!",
+   "en": "Careful, the floor is slippery!"
+  },
+  "смажити на сковорідці": {
+   "uk": "Картоплю краще [смажити на сковорідці].",
+   "en": "Potatoes are best fried in a pan."
+  },
+  "сміливий": {
+   "uk": "Треба бути [сміливим], щоб сказати правду.",
+   "en": "You have to be bold to tell the truth."
+  },
+  "солодкий": {
+   "uk": "Цей чай занадто [солодкий].",
+   "en": "This tea is too sweet."
+  },
+  "соняшник": {
+   "uk": "У полі цвів [соняшник].",
+   "en": "Sunflowers were blooming in the field."
+  },
+  "сподіваюсь": {
+   "uk": "[Сподіваюсь], завтра буде сонячно.",
+   "en": "I hope it'll be sunny tomorrow."
+  },
+  "спочатку": {
+   "uk": "[Спочатку] помий руки, потім сідай їсти.",
+   "en": "First wash your hands, then sit down to eat."
+  },
+  "сприяти": {
+   "uk": "Спорт може [сприяти] гарному сну.",
+   "en": "Exercise can promote good sleep."
+  },
+  "співбесіда": {
+   "uk": "У мене завтра [співбесіда] в банку.",
+   "en": "I have an interview at the bank tomorrow."
+  },
+  "спілка": {
+   "uk": "Журналісти створили свою [спілку].",
+   "en": "The journalists formed their own union."
+  },
+  "ставлення": {
+   "uk": "Мені не подобається його [ставлення] до роботи.",
+   "en": "I don't like his attitude toward work."
+  },
+  "стежка": {
+   "uk": "[Стежка] веде до озера.",
+   "en": "The path leads to the lake."
+  },
+  "стосунки": {
+   "uk": "У нас добрі [стосунки] з сусідами.",
+   "en": "We have a good relationship with the neighbors."
+  },
+  "судові": {
+   "uk": "[Судові] справи тривають роками.",
+   "en": "Judicial cases drag on for years."
+  },
+  "сумніватися": {
+   "uk": "Не варто [сумніватися] в собі.",
+   "en": "You shouldn't doubt yourself."
+  },
+  "суспільство": {
+   "uk": "Освіта важлива для всього [суспільства].",
+   "en": "Education is important for all of society."
+  },
+  "сховище": {
+   "uk": "Під час тривоги ми спускаємося в [сховище].",
+   "en": "During an air-raid alert we go down to the refuge."
+  },
+  "схопили": {
+   "uk": "Злодія [схопили] біля вокзалу.",
+   "en": "They grabbed the thief near the train station."
+  },
+  "сітки": {
+   "uk": "Рибалки лагодили свої [сітки].",
+   "en": "The fishermen were mending their nets."
+  },
+  "трапляється": {
+   "uk": "Таке [трапляється] з кожним.",
+   "en": "That happens to everyone."
+  },
+  "тривати": {
+   "uk": "Ремонт може [тривати] місяць.",
+   "en": "The renovation may last a month."
+  },
+  "трошки більше ніж": {
+   "uk": "Дорога займе [трошки більше, ніж] годину.",
+   "en": "The trip will take a little more than an hour."
+  },
+  "у вигляді": {
+   "uk": "Ці ліки випускають [у вигляді] таблеток.",
+   "en": "This medicine comes in the form of tablets."
+  },
+  "у кожного є своя голова на плечах": {
+   "uk": "Я не буду тобі радити. [У кожного є своя голова на плечах].",
+   "en": "I won't advise you. Everyone has their own head on their shoulders."
+  },
+  "у колі": {
+   "uk": "Я святкував день народження [у колі] друзів.",
+   "en": "I celebrated my birthday in a circle of friends."
+  },
+  "у моєму будинку": {
+   "uk": "[У моєму будинку] немає ліфта.",
+   "en": "There's no elevator in my house."
+  },
+  "у соціальних мережах": {
+   "uk": "Вона публікує фото [у соціальних мережах].",
+   "en": "She posts photos on social networks."
+  },
+  "удосконалити": {
+   "uk": "Я хочу [удосконалити] свою граматику.",
+   "en": "I want to improve my grammar."
+  },
+  "укриття": {
+   "uk": "Школа має власне [укриття].",
+   "en": "The school has its own shelter."
+  },
+  "уряд": {
+   "uk": "[Уряд] оголосив нові правила.",
+   "en": "The government announced new rules."
+  },
+  "урядова": {
+   "uk": "[Урядова] делегація прибула до Брюсселя.",
+   "en": "The government delegation arrived in Brussels."
+  },
+  "фарба": {
+   "uk": "На стіні ще не висохла [фарба].",
+   "en": "The paint on the wall hasn't dried yet."
+  },
+  "фарбують": {
+   "uk": "Робітники [фарбують] паркан.",
+   "en": "The workers are painting the fence."
+  },
+  "хай нехай": {
+   "uk": "[Хай] він спробує сам. [Нехай] вчиться.",
+   "en": "Let him try it himself. Let him learn."
+  },
+  "хвилин": {
+   "uk": "Автобус приїде через [15 хвилин].",
+   "en": "The bus will arrive in 15 minutes."
+  },
+  "хлопець": {
+   "uk": "Той [хлопець] грає на гітарі.",
+   "en": "That boy plays guitar."
+  },
+  "хліб": {
+   "uk": "Купи, будь ласка, свіжий [хліб].",
+   "en": "Please buy some fresh bread."
+  },
+  "цінувати": {
+   "uk": "Треба [цінувати] те, що маєш.",
+   "en": "You should appreciate what you have."
+  },
+  "чани": {
+   "uk": "На виноробні стоять великі [чани] для вина.",
+   "en": "At the winery there are big vats for wine."
+  },
+  "шкарпетки": {
+   "uk": "Мама подарувала мені теплі [шкарпетки].",
+   "en": "Mom gave me warm socks."
+  },
+  "шкідливі звички": {
+   "uk": "Він позбувся всіх [шкідливих звичок].",
+   "en": "He got rid of all his bad habits."
+  },
+  "шпалери": {
+   "uk": "Ми поклеїли нові [шпалери] у спальні.",
+   "en": "We put up new wallpaper in the bedroom."
+  },
+  "штучний інтелект": {
+   "uk": "[Штучний інтелект] змінює журналістику.",
+   "en": "Artificial intelligence is changing journalism."
+  },
+  "ші": {
+   "uk": "Я використовую [ШІ], щоб перекладати тексти.",
+   "en": "I use AI to translate texts."
+  },
+  "що стосується віку": {
+   "uk": "[Що стосується віку], обмежень немає.",
+   "en": "Regarding age, there are no restrictions."
+  },
+  "я не встиг": {
+   "uk": "[Я не встиг] поснідати.",
+   "en": "I didn't have time to eat breakfast."
+  },
+  "я раджу": {
+   "uk": "[Я раджу] тобі подивитися цей фільм.",
+   "en": "I advise you to watch this film."
+  },
+  "як підліток": {
+   "uk": "Він поводиться [як підліток].",
+   "en": "He behaves like a teenager."
+  },
+  "іноді віпіваю склянку апелсінового соку": {
+   "uk": "Вранці я [іноді випиваю склянку апельсинового соку].",
+   "en": "In the morning I sometimes drink a glass of orange juice."
+  }
+ }
+}

@@ -30,6 +30,23 @@ new key and resets that word's history. Adding a real `id` column avoids this.
 
 Sharing: set the sheet to "anyone with the link can view."
 
+## Example sentences
+
+After you answer and see the correct meaning, the app shows the word used in a
+sentence, with the word highlighted, before you rate whether you know it.
+
+Sentences come from two places, in this order:
+
+1. **The sheet.** Put a Ukrainian sentence in column D and its English in column E
+   (or both in column D, separated by ` | `). Wrap the target word in square
+   brackets to control the highlight, e.g. `Я [ледве] встиг на потяг.` Without
+   brackets the app highlights words that start like the one being studied.
+   Adding or editing a sentence never changes a word's id, so history is kept.
+2. **`examples.json`.** A ready-made sentence for each word that was on the sheet
+   when the file was written, keyed by the cleaned Ukrainian word.
+
+A word with neither shows a note asking for a column D sentence.
+
 ## Setup
 
 1. Push this repo to GitHub.

@@ -1,11 +1,12 @@
 // Cache version. Bump this whenever index.html changes.
-var CACHE = "uk-vocab-v5";
+var CACHE = "uk-vocab-v6";
 
 var SHELL = [
   "./",
   "./index.html",
   "./manifest.webmanifest",
-  "./words.json"
+  "./words.json",
+  "./examples.json"
 ];
 
 self.addEventListener("install", function(e){
