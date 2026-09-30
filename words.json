@@ -1,6 +1,16 @@
 {
- "count": 305,
+ "count": 327,
  "words": [
+  {
+   "id": "477afb6b3f",
+   "uk": "авжеж",
+   "en": "of course"
+  },
+  {
+   "id": "e83b60e91c",
+   "uk": "але",
+   "en": "but"
+  },
   {
    "id": "d42d7ebffb",
    "uk": "амброзіі",
@@ -20,6 +30,11 @@
    "id": "4b2d6fe317",
    "uk": "безкоштовно",
    "en": "free"
+  },
+  {
+   "id": "5fa5812d9c",
+   "uk": "безлад",
+   "en": "mess"
   },
   {
    "id": "a662894501",
@@ -62,6 +77,11 @@
    "en": "pain in the brain"
   },
   {
+   "id": "8ae38b564e",
+   "uk": "вакцини не вистачало",
+   "en": "there was not enough vaccine"
+  },
+  {
    "id": "040ec20333",
    "uk": "варто",
    "en": "worth"
@@ -97,6 +117,11 @@
    "en": "use"
   },
   {
+   "id": "942a527092",
+   "uk": "випадки захворювання",
+   "en": "cases of disease"
+  },
+  {
    "id": "9c8e5d7dd8",
    "uk": "випадково",
    "en": "accidentally"
@@ -107,9 +132,9 @@
    "en": "solve"
   },
   {
-   "id": "6f5c1e86cf",
+   "id": "3e5a95faf5",
    "uk": "висота",
-   "en": "height (for a building)"
+   "en": "height"
   },
   {
    "id": "b32ea98eef",
@@ -257,6 +282,11 @@
    "en": "good end result"
   },
   {
+   "id": "e1ffad24c0",
+   "uk": "годувати",
+   "en": "feed"
+  },
+  {
    "id": "42acf69dac",
    "uk": "головний біль",
    "en": "headache"
@@ -330,6 +360,11 @@
    "id": "4993b04538",
    "uk": "дозволяв нам",
    "en": "allowed us"
+  },
+  {
+   "id": "3ed990b9b9",
+   "uk": "дозволяли",
+   "en": "allowed"
   },
   {
    "id": "8a38e0697e",
@@ -417,9 +452,9 @@
    "en": "I've had enough of this."
   },
   {
-   "id": "5606bf2029",
+   "id": "65df53eef0",
    "uk": "з одного боку",
-   "en": "on the one hand"
+   "en": "on one side"
   },
   {
    "id": "51c7ed3c83",
@@ -647,6 +682,11 @@
    "en": "summer"
   },
   {
+   "id": "63a8c968fb",
+   "uk": "літні люди",
+   "en": "elderly people"
+  },
+  {
    "id": "e8d9599d0e",
    "uk": "ліхтарики",
    "en": "flashlights"
@@ -707,9 +747,19 @@
    "en": "my attitude"
   },
   {
+   "id": "ef3ef946bf",
+   "uk": "мої сусіди",
+   "en": "my neighbors"
+  },
+  {
    "id": "b06b7a7faa",
    "uk": "міграційна",
    "en": "migration"
+  },
+  {
+   "id": "aae280f902",
+   "uk": "Міжгір'я",
+   "en": "Mizhhirya"
   },
   {
    "id": "b1a6c9b2d8",
@@ -720,6 +770,11 @@
    "id": "adfba88559",
    "uk": "на Алясці",
    "en": "in Alaska"
+  },
+  {
+   "id": "50ee07364b",
+   "uk": "на околиці",
+   "en": "on the outskirts"
   },
   {
    "id": "043a736d08",
@@ -862,6 +917,11 @@
    "en": "restrict"
   },
   {
+   "id": "d68e1a50e4",
+   "uk": "обов'язково",
+   "en": "necessarily"
+  },
+  {
    "id": "c01c74f0c6",
    "uk": "обрали",
    "en": "elected"
@@ -950,6 +1010,11 @@
    "id": "07080516c4",
    "uk": "переваги і недоліки",
    "en": "advantages and disadvantages"
+  },
+  {
+   "id": "fc2986ae27",
+   "uk": "перейматися за",
+   "en": "to worry about"
   },
   {
    "id": "369aedf77b",
@@ -1057,9 +1122,19 @@
    "en": "violation"
   },
   {
+   "id": "5fe2fbd4da",
+   "uk": "посварився",
+   "en": "quarreled"
+  },
+  {
    "id": "1e5ae4b5fc",
    "uk": "посвідчення водія",
    "en": "driver's license"
+  },
+  {
+   "id": "3141f6939f",
+   "uk": "посиденьки",
+   "en": "gatherings"
   },
   {
    "id": "00832974d7",
@@ -1087,6 +1162,11 @@
    "en": "treated"
   },
   {
+   "id": "ecddade058",
+   "uk": "приділити час",
+   "en": "to take the time"
+  },
+  {
    "id": "e8cf4adc8e",
    "uk": "приділяти увагу",
    "en": "pay attention"
@@ -1110,6 +1190,11 @@
    "id": "f7f6eb2615",
    "uk": "приносити задоволення",
    "en": "to bring pleasure"
+  },
+  {
+   "id": "be9fbc7a88",
+   "uk": "притулок",
+   "en": "shelter"
   },
   {
    "id": "42ebcaefb2",
@@ -1190,6 +1275,11 @@
    "id": "dfdac032e0",
    "uk": "релігія",
    "en": "religion"
+  },
+  {
+   "id": "a47ba9b488",
+   "uk": "робити щеплення",
+   "en": "engraft"
   },
   {
    "id": "38aab36a3a",
@@ -1392,6 +1482,11 @@
    "en": "a little more than"
   },
   {
+   "id": "c7d4410dbb",
+   "uk": "у більш вигідному становищі",
+   "en": "in a more advantageous position"
+  },
+  {
    "id": "b25ba3481a",
    "uk": "у вигляді",
    "en": "in the form of"
@@ -1502,9 +1597,19 @@
    "en": "AI"
   },
   {
+   "id": "fcadac23a9",
+   "uk": "щеплення проти грипу",
+   "en": "flu vaccination"
+  },
+  {
    "id": "b41e7c3a66",
    "uk": "що стосується віку",
    "en": "regarding age"
+  },
+  {
+   "id": "383056d612",
+   "uk": "щур",
+   "en": "rat"
   },
   {
    "id": "0815b00865",
@@ -1520,6 +1625,11 @@
    "id": "3ca967e0e1",
    "uk": "як підліток",
    "en": "as a teenager"
+  },
+  {
+   "id": "f0155e601b",
+   "uk": "якісна",
+   "en": "high-quality"
   },
   {
    "id": "f9e55d48b4",
