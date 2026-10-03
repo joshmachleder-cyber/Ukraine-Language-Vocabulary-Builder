@@ -1,5 +1,5 @@
 {
- "count": 327,
+ "count": 340,
  "words": [
   {
    "id": "477afb6b3f",
@@ -42,6 +42,11 @@
    "en": "crazy"
   },
   {
+   "id": "6a95663399",
+   "uk": "брати хабар",
+   "en": "to take a bribe"
+  },
+  {
    "id": "fec0be1855",
    "uk": "бруд",
    "en": "dirt"
@@ -80,6 +85,11 @@
    "id": "8ae38b564e",
    "uk": "вакцини не вистачало",
    "en": "there was not enough vaccine"
+  },
+  {
+   "id": "42e6b4241d",
+   "uk": "валіза",
+   "en": "suitcase"
   },
   {
    "id": "040ec20333",
@@ -135,6 +145,11 @@
    "id": "3e5a95faf5",
    "uk": "висота",
    "en": "height"
+  },
+  {
+   "id": "0352d85015",
+   "uk": "вистачати",
+   "en": "suffice"
   },
   {
    "id": "b32ea98eef",
@@ -262,6 +277,11 @@
    "en": "leave"
   },
   {
+   "id": "359521f56a",
+   "uk": "відчуття",
+   "en": "feeling"
+  },
+  {
    "id": "d28e11057d",
    "uk": "вік",
    "en": "age"
@@ -275,6 +295,11 @@
    "id": "ec974ad41c",
    "uk": "гарбуз",
    "en": "pumpkin"
+  },
+  {
+   "id": "5169785858",
+   "uk": "гардеробна кімната",
+   "en": "dressing room"
   },
   {
    "id": "aed0554bcb",
@@ -310,6 +335,11 @@
    "id": "f766c8565d",
    "uk": "Гучно",
    "en": "Loud"
+  },
+  {
+   "id": "f7d0a479bf",
+   "uk": "давти хабар",
+   "en": "to bribe"
   },
   {
    "id": "a03386cdaf",
@@ -472,6 +502,11 @@
    "en": "on the other hand"
   },
   {
+   "id": "db8a1820df",
+   "uk": "за грати",
+   "en": "behind bars"
+  },
+  {
    "id": "386f3998ef",
    "uk": "забороняти",
    "en": "prohibit"
@@ -480,6 +515,11 @@
    "id": "b5ceb95ede",
    "uk": "заздалегідь",
    "en": "in advance"
+  },
+  {
+   "id": "8e59cefb92",
+   "uk": "заздрити",
+   "en": "envy"
   },
   {
    "id": "14be609805",
@@ -585,6 +625,11 @@
    "id": "d6129deb17",
    "uk": "ЗСУ",
    "en": "Armed Forces of Ukraine"
+  },
+  {
+   "id": "1c4c6636fe",
+   "uk": "зустрічала",
+   "en": "met"
   },
   {
    "id": "9bbf4c5351",
@@ -1312,6 +1357,16 @@
    "en": "I understand"
   },
   {
+   "id": "0d99cc71b2",
+   "uk": "рятувальник",
+   "en": "lifeguard"
+  },
+  {
+   "id": "5935a948c4",
+   "uk": "рятувати",
+   "en": "save"
+  },
+  {
    "id": "35a10611d1",
    "uk": "рівень",
    "en": "level"
@@ -1542,6 +1597,11 @@
    "en": "are painting"
   },
   {
+   "id": "ec4614cdef",
+   "uk": "хабарник",
+   "en": "grafter"
+  },
+  {
    "id": "e3c1603b2a",
    "uk": "Хай . Нехай",
    "en": "Let . Let"
@@ -1560,6 +1620,11 @@
    "id": "412c151f33",
    "uk": "хліб",
    "en": "bread"
+  },
+  {
+   "id": "2ed992d4c9",
+   "uk": "хмарочоси",
+   "en": "skyscrapers"
   },
   {
    "id": "aaca6abbf4",
