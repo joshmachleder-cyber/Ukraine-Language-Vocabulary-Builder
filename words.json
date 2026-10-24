@@ -1,5 +1,5 @@
 {
- "count": 340,
+ "count": 363,
  "words": [
   {
    "id": "477afb6b3f",
@@ -77,9 +77,19 @@
    "en": "to be successful"
   },
   {
+   "id": "ff3c8f2579",
+   "uk": "бюлетень",
+   "en": "bulletin"
+  },
+  {
    "id": "cb5ddf8dce",
    "uk": "біль ум'язах",
    "en": "pain in the brain"
+  },
+  {
+   "id": "5342124a4f",
+   "uk": "більшість",
+   "en": "majority"
   },
   {
    "id": "8ae38b564e",
@@ -120,6 +130,11 @@
    "id": "9dcc0c2366",
    "uk": "взагалі",
    "en": "in general"
+  },
+  {
+   "id": "15ba59cba6",
+   "uk": "вибори",
+   "en": "election"
   },
   {
    "id": "06ce6c2465",
@@ -227,6 +242,11 @@
    "en": "Everything will be fine for each of us."
   },
   {
+   "id": "6e232a6333",
+   "uk": "всім",
+   "en": "to everyone"
+  },
+  {
    "id": "651b6dad5d",
    "uk": "всіоднолітки",
    "en": "all peers"
@@ -245,6 +265,11 @@
    "id": "3ddb4c2526",
    "uk": "вулканічні  острови",
    "en": "volcanic islands"
+  },
+  {
+   "id": "b2cb6ad9a4",
+   "uk": "відбуватися",
+   "en": "occur"
   },
   {
    "id": "190e0e772a",
@@ -267,6 +292,11 @@
    "en": "remotely"
   },
   {
+   "id": "57989d4397",
+   "uk": "відмінили",
+   "en": "canceled"
+  },
+  {
    "id": "0b015cfb0b",
    "uk": "відповідальний",
    "en": "responsible"
@@ -275,6 +305,16 @@
    "id": "4cbaf07e19",
    "uk": "відпустка",
    "en": "leave"
+  },
+  {
+   "id": "55c57dc4c3",
+   "uk": "відрядження",
+   "en": "assignment"
+  },
+  {
+   "id": "030db2a04f",
+   "uk": "відсотків",
+   "en": "percent"
   },
   {
    "id": "359521f56a",
@@ -550,6 +590,11 @@
    "id": "c505bd6c03",
    "uk": "заплющити очі",
    "en": "close your eyes"
+  },
+  {
+   "id": "334600266c",
+   "uk": "Заповіт",
+   "en": "Will"
   },
   {
    "id": "a6d8bdbec4",
@@ -947,6 +992,11 @@
    "en": "discussing"
   },
   {
+   "id": "0dbdc9ce49",
+   "uk": "обираємо кандидата",
+   "en": "we choose a candidate"
+  },
+  {
    "id": "a3565aa7c8",
    "uk": "облаштований",
    "en": "equipped"
@@ -960,6 +1010,11 @@
    "id": "e456576cb8",
    "uk": "обмежую",
    "en": "restrict"
+  },
+  {
+   "id": "f04b7cbca2",
+   "uk": "обов'язки",
+   "en": "responsibilities"
   },
   {
    "id": "d68e1a50e4",
@@ -1037,6 +1092,11 @@
    "en": "island"
   },
   {
+   "id": "ec96634e1a",
+   "uk": "отруїтися",
+   "en": "to be poisoned"
+  },
+  {
    "id": "4a0751e89c",
    "uk": "парасолька",
    "en": "umbrella"
@@ -1090,6 +1150,11 @@
    "id": "70b75571ff",
    "uk": "пліч-о-пліч",
    "en": "side by side"
+  },
+  {
+   "id": "8932fd4acc",
+   "uk": "поверх",
+   "en": "floor"
   },
   {
    "id": "38d05eca33",
@@ -1147,6 +1212,11 @@
    "en": "take revenge"
   },
   {
+   "id": "52dac04544",
+   "uk": "попередні",
+   "en": "previous"
+  },
+  {
    "id": "bf9867ffcd",
    "uk": "по-перше",
    "en": "firstly"
@@ -1182,6 +1252,11 @@
    "en": "gatherings"
   },
   {
+   "id": "ce7bfa743e",
+   "uk": "послуга",
+   "en": "service"
+  },
+  {
    "id": "00832974d7",
    "uk": "посмішка",
    "en": "smile"
@@ -1197,9 +1272,24 @@
    "en": "humor"
   },
   {
+   "id": "8f04201cfe",
+   "uk": "поштова скринька",
+   "en": "mailbox"
+  },
+  {
+   "id": "ae1ef0eec9",
+   "uk": "правила",
+   "en": "regulations"
+  },
+  {
    "id": "f2392df7e9",
    "uk": "праця",
    "en": "work"
+  },
+  {
+   "id": "4f792338eb",
+   "uk": "пригоди",
+   "en": "adventures"
   },
   {
    "id": "e467a2f418",
@@ -1457,6 +1547,11 @@
    "en": "I hope"
   },
   {
+   "id": "2a65558663",
+   "uk": "спостерігати",
+   "en": "watch"
+  },
+  {
    "id": "c4b6503898",
    "uk": "спочатку",
    "en": "first"
@@ -1507,6 +1602,11 @@
    "en": "society"
   },
   {
+   "id": "e461883fd0",
+   "uk": "схвалювати",
+   "en": "approve"
+  },
+  {
    "id": "bad338f790",
    "uk": "сховище",
    "en": "refuge"
@@ -1545,6 +1645,11 @@
    "id": "b25ba3481a",
    "uk": "у вигляді",
    "en": "in the form of"
+  },
+  {
+   "id": "77a3b79dd8",
+   "uk": "у захваті",
+   "en": "delighted"
   },
   {
    "id": "79f75b5c10",
@@ -1622,6 +1727,11 @@
    "en": "bread"
   },
   {
+   "id": "7b20cee4ca",
+   "uk": "хмарочос",
+   "en": "skyscraper"
+  },
+  {
    "id": "2ed992d4c9",
    "uk": "хмарочоси",
    "en": "skyscrapers"
@@ -1685,6 +1795,11 @@
    "id": "838df420de",
    "uk": "я раджу",
    "en": "I advise"
+  },
+  {
+   "id": "bd1e547392",
+   "uk": "я схуд",
+   "en": "I lost weight."
   },
   {
    "id": "3ca967e0e1",
