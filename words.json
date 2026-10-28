@@ -1,5 +1,5 @@
 {
- "count": 363,
+ "count": 375,
  "words": [
   {
    "id": "477afb6b3f",
@@ -202,6 +202,11 @@
    "en": "algae"
   },
   {
+   "id": "456d717554",
+   "uk": "водоспад",
+   "en": "waterfall"
+  },
+  {
    "id": "8cd200489e",
    "uk": "водійське посвідчення",
    "en": "driver's license"
@@ -265,6 +270,11 @@
    "id": "3ddb4c2526",
    "uk": "вулканічні  острови",
    "en": "volcanic islands"
+  },
+  {
+   "id": "4a9af2aad1",
+   "uk": "вчасно",
+   "en": "in time"
   },
   {
    "id": "b2cb6ad9a4",
@@ -482,6 +492,11 @@
    "en": "to adhere to"
   },
   {
+   "id": "235e87ac42",
+   "uk": "дошка оголошень",
+   "en": "bulletin board"
+  },
+  {
    "id": "07dcf13d42",
    "uk": "другої години",
    "en": "two o'clock"
@@ -542,6 +557,11 @@
    "en": "on the other hand"
   },
   {
+   "id": "93f84ed37b",
+   "uk": "з'явився",
+   "en": "appeared"
+  },
+  {
    "id": "db8a1820df",
    "uk": "за грати",
    "en": "behind bars"
@@ -597,6 +617,11 @@
    "en": "Will"
   },
   {
+   "id": "e98d37378f",
+   "uk": "запросити",
+   "en": "invite"
+  },
+  {
    "id": "a6d8bdbec4",
    "uk": "запізнився",
    "en": "late"
@@ -642,6 +667,11 @@
    "en": "went to the doctor"
   },
   {
+   "id": "28fb653656",
+   "uk": "звикли",
+   "en": "accustomed"
+  },
+  {
    "id": "e297f8b642",
    "uk": "звільнення",
    "en": "release"
@@ -665,6 +695,16 @@
    "id": "248df1da69",
    "uk": "знайомі",
    "en": "acquaintances"
+  },
+  {
+   "id": "75f05128f5",
+   "uk": "зник",
+   "en": "disappeared"
+  },
+  {
+   "id": "bad82b4fed",
+   "uk": "зникнути",
+   "en": "disappear"
   },
   {
    "id": "d6129deb17",
@@ -892,9 +932,9 @@
    "en": "above oneself"
   },
   {
-   "id": "12ea98706a",
+   "id": "f2ea7dc3c0",
    "uk": "надавати перевагу",
-   "en": "to give preference"
+   "en": "to prefer"
   },
   {
    "id": "3bd04d7f6d",
@@ -1007,9 +1047,9 @@
    "en": "to equip"
   },
   {
-   "id": "e456576cb8",
+   "id": "cb042fbd40",
    "uk": "обмежую",
-   "en": "restrict"
+   "en": "I limit"
   },
   {
    "id": "f04b7cbca2",
@@ -1132,6 +1172,11 @@
    "en": "negotiations"
   },
   {
+   "id": "18f805efbd",
+   "uk": "перемінлива",
+   "en": "variable"
+  },
+  {
    "id": "eb5802ab64",
    "uk": "першого квітня",
    "en": "April Fool's Day"
@@ -1225,6 +1270,11 @@
    "id": "53d5ae9da1",
    "uk": "порада",
    "en": "advice"
+  },
+  {
+   "id": "4be7268da2",
+   "uk": "порадитися",
+   "en": "consult"
   },
   {
    "id": "d5008be984",
@@ -1330,6 +1380,11 @@
    "id": "be9fbc7a88",
    "uk": "притулок",
    "en": "shelter"
+  },
+  {
+   "id": "e2b44097ba",
+   "uk": "приїзд",
+   "en": "arrival"
   },
   {
    "id": "42ebcaefb2",
@@ -1630,6 +1685,11 @@
    "id": "8da3224eef",
    "uk": "Тривати",
    "en": "Last"
+  },
+  {
+   "id": "7e36d82f27",
+   "uk": "трошки",
+   "en": "a little bit"
   },
   {
    "id": "1cead39bc9",
