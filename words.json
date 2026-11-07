@@ -1,5 +1,5 @@
 {
- "count": 375,
+ "count": 382,
  "words": [
   {
    "id": "477afb6b3f",
@@ -230,6 +230,11 @@
    "id": "7d1b5fef26",
    "uk": "впертий як осел",
    "en": "stubborn as a donkey"
+  },
+  {
+   "id": "8e1dfeac53",
+   "uk": "вплив",
+   "en": "influence"
   },
   {
    "id": "69a1378978",
@@ -465,6 +470,11 @@
    "id": "a7f1ae68bb",
    "uk": "домовленність",
    "en": "agreement"
+  },
+  {
+   "id": "c1f109be80",
+   "uk": "дорослий",
+   "en": "adult"
   },
   {
    "id": "52d0c5f3c8",
@@ -902,6 +912,11 @@
    "en": "in Alaska"
   },
   {
+   "id": "621c0e4362",
+   "uk": "на випадок",
+   "en": "in case"
+  },
+  {
    "id": "50ee07364b",
    "uk": "на околиці",
    "en": "on the outskirts"
@@ -932,9 +947,9 @@
    "en": "above oneself"
   },
   {
-   "id": "12ea98706a",
+   "id": "f2ea7dc3c0",
    "uk": "надавати перевагу",
-   "en": "to give preference"
+   "en": "to prefer"
   },
   {
    "id": "3bd04d7f6d",
@@ -1207,6 +1222,11 @@
    "en": "floors"
   },
   {
+   "id": "72b8f0e8c1",
+   "uk": "повітряний змій",
+   "en": "kite"
+  },
+  {
    "id": "6e49955ba7",
    "uk": "погоджуватися",
    "en": "to agree"
@@ -1317,9 +1337,19 @@
    "en": "need"
   },
   {
+   "id": "be1fa06d9f",
+   "uk": "потім",
+   "en": "then"
+  },
+  {
    "id": "8be03d87be",
    "uk": "почуття гумору",
    "en": "humor"
+  },
+  {
+   "id": "57c87e7e7a",
+   "uk": "почуття ейфорії",
+   "en": "feeling of euphoria"
   },
   {
    "id": "8f04201cfe",
@@ -1585,6 +1615,11 @@
    "id": "7572b77e98",
    "uk": "сміливий",
    "en": "bold"
+  },
+  {
+   "id": "f580cdd859",
+   "uk": "снодійне",
+   "en": "sleeping pills"
   },
   {
    "id": "1680b50ff7",
